@@ -1,0 +1,107 @@
+@use '~scss/mixins/breakpoints' as media;
+@use '~scss/mixins/flexes' as flexes;
+@use '~scss/mixins/fonts' as fonts;
+@use '~scss/mixins/colors' as colors;
+
+// Картинка с заголовком страницы
+.page-image {
+	@include flexes.flexColumnCenter;
+
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 70px;
+	max-height: 80vh;
+
+	@include media.breakpoint(lg) {
+		margin-bottom: 30px;
+	}
+
+	@include media.breakpoint(sm) {
+		margin-bottom: 0;
+	}
+
+	&__picture {
+		width: 100vw;
+	}
+
+	&__img {
+		width: 100%;
+	}
+
+	&__content {
+		@include flexes.flexColumnCenter;
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+		&.gradient {
+			background: linear-gradient(360deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 50%);
+		}
+	}
+
+	&__bottom-aligner {
+		@include flexes.flexColumnEnd;
+
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		padding-bottom: 110px;
+
+		@include media.breakpoint(lg) {
+			padding-bottom: 50px;
+		}
+
+		@include media.breakpoint(sm) {
+			padding-bottom: 25px;
+		}
+	}
+
+	&__text-container {
+		padding-bottom: 0;
+		padding-top: 0;
+		width: 100%;
+	}
+
+	&__title {
+		color: #{ colors.getColor('white') };
+		font-family: #{ fonts.getFonts('officina-sans') };
+		font-size: #{ fonts.calcSize(48px) };
+		margin-bottom: .17em;
+		font-weight: bold;
+
+		@include media.breakpoint(lg) {
+			font-size: 2em;
+		}
+
+		@include media.breakpoint(sm) {
+			font-size: 1.7em;
+		}
+	}
+
+	&__subtitle {
+		color: #{ colors.getColor('white') };
+		font-size: #{ fonts.calcSize(22px) };
+
+		@include media.breakpoint(lg) {
+			font-size: 1em;
+		}
+
+		@include media.breakpoint(sm) {
+			font-size: .85em;
+		}
+	}
+
+	&__middle-block {
+		width: 100%;
+
+		.banner-items__element:not(:last-child) {
+
+			@include media.breakpoint(md) {
+				display: none;
+			}
+		}
+	}
+}

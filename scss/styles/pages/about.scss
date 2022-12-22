@@ -1,0 +1,120 @@
+@use '~scss/mixins/flexes' as flexes;
+@use '~scss/mixins/fonts' as fonts;
+@use '~scss/mixins/colors' as colors;
+@use '~scss/mixins/breakpoints' as media;
+
+.page-about {
+
+    &__view-content {
+
+        display: none;
+        padding-top: 35px;
+        padding-bottom: 10px;
+
+        @include media.breakpoint(md) {
+            display: block;
+        }
+
+        .banner-items {
+
+            color: #{ colors.getColor('black') };
+            transform: unset;
+
+            @include media.breakpoint(sm) {
+                gap: 1em;
+            }
+
+            &__element {
+
+                padding-left: #{ fonts.calcSize(18px) };
+
+                &:last-child {
+
+                    display: none;
+                }
+            }
+
+            &__title {
+                @include media.breakpoint(md) {
+                    font-size: #{ fonts.calcSize(55px) };
+                }
+            }
+
+            &__description {
+                @include media.breakpoint(md) {
+                    font-weight: 400;
+                    color: #{ colors.getColor('grey') };
+                    font-size: #{ fonts.calcSize(22px) };
+                }
+            }
+        }
+    }
+
+    .benefit {
+
+        &__container {
+            margin-bottom: 120px;
+            margin-top: 60px;
+
+            @include media.breakpoint(lg) {
+                margin-bottom: 60px;
+                margin-top: 10px;
+            }
+
+            @include media.breakpoint(sm) {
+                margin-bottom: 5px;
+            }
+
+            &.container {
+
+                @include media.breakpoint(sm) {
+                    padding-bottom: 0;
+                }
+            }
+        }
+
+        &__item {
+
+            @include media.breakpoint(lg) {
+                border-bottom: none;
+            }
+
+            &-header {
+
+                margin-bottom: 45px;
+
+                @include media.breakpoint(md) {
+                    margin-bottom: 25px;
+                }
+            }
+
+            &-title {
+                font-weight: 400;
+            }
+
+            &-description b {
+                font-weight: 400;
+
+                &:first-of-type {
+
+                }
+            }
+        }
+    }
+
+    .review-container {
+
+        margin-top: 170px;
+        margin-bottom: 155px;
+
+        @include media.breakpoint(sm) {
+            margin-top: 90px;
+            margin-bottom: 70px;
+        }
+
+        @include media.breakpoint(sm) {
+            margin-top: 40px;
+            margin-bottom: 70px;
+        }
+    }
+}

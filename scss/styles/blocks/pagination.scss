@@ -1,0 +1,46 @@
+@use '~scss/mixins/colors' as colors;
+
+.pagination {
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    * {
+        cursor: pointer;
+        display: inline-block;
+
+        &:hover {
+            color: var(--mainColor);
+        }
+    }
+
+    .pag-prev {
+
+        padding-right: 18px;
+
+        svg {
+            transform: rotate(180deg);
+        }
+    }
+
+    .pag-next {
+        padding-left: 18px;
+    }
+
+    a {
+        color: #{map-get(colors.$siteColors, 'grey')};
+    }
+
+    li {
+        padding: 0 8px;
+
+        &:hover svg > path{
+            fill: var(--mainColor);
+        }
+    }
+
+    .active {
+        color: var(--mainColor) !important;
+    }
+}

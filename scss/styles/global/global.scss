@@ -1,0 +1,174 @@
+@use "~scss/mixins/breakpoints" as media;
+@use "~scss/mixins/colors" as colors;
+@use "~scss/mixins/fonts" as fonts;
+@use '~scss/mixins/elements' as elements;
+
+*, *::before, *::after {
+	box-sizing: border-box;
+	outline: none;
+	color: inherit;
+	font-size: inherit;
+}
+
+::selection {
+	color: #{ colors.getColor('white') };
+	background: #{ lighten(colors.getColor('main'), 5%) };
+}
+
+::-moz-selection {
+	color: #{ colors.getColor('white') };
+	background: #{ lighten(colors.getColor('main'), 5%) };
+}
+
+html {
+	--fontColor: #{colors.getColor('black')};
+	--globalFontSize: #{ map-get(fonts.$sizes, 'normal') };
+	--defaultFontFamily: #{fonts.defaultFontFamily()};
+	--maxContainerWidth: 1400px;
+
+	height: 100%;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-o-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	font-size: var(--globalFontSize);
+
+	@include media.breakpoint(lg) {
+		--globalFontSize: 16px;
+	}
+
+	@include media.breakpoint(sm) {
+		--globalFontSize: 14px;
+	}
+}
+
+body {
+	--mainColor: #{colors.getColor('main')};
+	--secondaryColor: #{colors.getColor('secondary')};
+	--scrollWidth: 15px;
+
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0;
+
+	font-size: var(--globalFontSize, 18px);
+	font-family: var(--defaultFontFamily);
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	color: var(--fontColor);
+	overflow-x: hidden;
+	position: relative;
+	background-color: #{colors.getColor('white')};
+
+	&.compensate-for-scrollbar {
+		margin-right: 0;
+
+		&, #header {
+			padding-right: var(--scrollWidth);
+
+			@include media.breakpoint(lg) {
+				padding-right: 0;
+			}
+		}
+	}
+
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	display: block;
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	margin: 0;
+	padding: 0;
+	float: none;
+}
+
+img {
+	user-select: none;
+}
+
+img, input, textarea, button, a {
+	border: none;
+	outline: none;
+	font-weight: 400;
+}
+
+textarea {
+	position: relative;
+	overflow: hidden;
+	resize: none;
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+}
+
+table {
+	border-spacing: 0;
+}
+
+td, th {
+	vertical-align: top;
+	word-wrap: break-word;
+}
+
+ul, nav, dl {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+blockquote{margin:0; padding:0; display:block;}
+section{position:relative;}
+main{position:relative; height:100%; clear:both;}
+header, nav, section, article, aside, footer, main{display:block;}
+
+a {
+	cursor: pointer;
+	color: var(--mainColor);
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.container {
+	@include elements.container;
+
+	--horizPadding: 0px;
+	--vertPadding: 30px;
+	padding: var(--vertPadding) var(--horizPadding);
+	box-sizing: border-box;
+
+	@include media.breakpoint(xxl) {
+		--horizPadding: 40px;
+	}
+
+	@include media.breakpoint(sm) {
+		--horizPadding: 20px;
+	}
+}
+
+#main {
+	min-height: 20vh;
+}
+
+$textAligns: (
+	'center',
+	'left',
+	'right'
+);
+.text {
+	@each $align in $textAligns {
+		&-#{$align} {
+			text-align: #{$align};
+		}
+	}
+}

@@ -1,0 +1,29 @@
+@use '~scss/mixins/colors' as colors;
+@use '~scss/mixins/flexes' as flexes;
+
+.button-default {
+	@include flexes.flexRowCenter;
+
+	color: #{ colors.getColor('white') };
+	padding: 15px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background-color: var(--mainColor);
+	cursor: pointer;
+
+	&_secondary-color {
+		background-color: var(--secondaryColor);
+	}
+
+	&_hoverable {
+		background-color: #{ colors.getColor('white') };
+		color: var(--mainColor);
+		border: 1px solid var(--mainColor);
+
+		&:hover {
+			color: #{ colors.getColor('white') };
+			background-color: var(--mainColor);
+		}
+	}
+}

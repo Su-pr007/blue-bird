@@ -1,0 +1,25 @@
+.hover-rotate {
+	--degrees: 360deg;
+	--duration: 400ms;
+	--timing: ease-out;
+
+	-moz-transition-duration: var(--duration);
+	-webkit-transition-duration: var(--duration);
+	-o-transition-duration: var(--duration);
+	transition-duration: var(--duration);
+
+	&:hover {
+		-moz-transform: rotate(var(--degrees));
+		-moz-transition-duration: var(--duration);
+		-moz-transition-timing-function: var(--timing);
+		-webkit-transform: rotate(var(--degrees));
+		-webkit-transition-duration: var(--duration);
+		-webkit-transition-timing-function: var(--timing);
+		-o-transform: rotate(var(--degrees));
+		-o-transition-duration: var(--duration);
+		-o-transition-timing-function: var(--timing);
+		transform: rotate(var(--degrees));
+		transition-duration: var(--duration);
+		transition-timing-function: var(--timing);
+	}
+}

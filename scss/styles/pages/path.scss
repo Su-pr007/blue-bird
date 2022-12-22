@@ -1,0 +1,143 @@
+@use '~scss/mixins/flexes' as flexes;
+@use '~scss/mixins/fonts' as fonts;
+@use '~scss/mixins/colors' as colors;
+@use '~scss/mixins/elements' as elements;
+@use '~scss/mixins/breakpoints' as media;
+
+.path {
+	--vertPadding: 70px;
+	--contentOffset: 110px;
+
+	@include media.breakpoint(lg) {
+		--vertPadding: 50px;
+		--contentOffset: 60px;
+	}
+
+	@include media.breakpoint(sm) {
+		--vertPadding: 35px;
+		--horizPadding: 0;
+		--contentOffset: 30px;
+	}
+
+	&__item {
+		margin-bottom: 200px;
+
+		@include media.breakpoint(lg) {
+			margin-bottom: 150px;
+		}
+
+		@include media.breakpoint(sm) {
+			margin-bottom: 100px;
+		}
+	}
+
+	&__image {
+		width: 100%;
+		height: 30vw;
+
+		@include media.breakpoint(lg) {
+			height: 40vw;
+		}
+
+		@include media.breakpoint(sm) {
+			height: 60vw;
+		}
+
+		&-offset {
+			position: relative;
+			overflow: hidden;
+			height: calc(100% + var(--contentOffset));
+			z-index: -1;
+
+			@include media.breakpoint(lg) {
+				
+			}
+		}
+
+		&-element {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 1px;
+			height: 1px;
+			min-height: 100%;
+			min-width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__content {
+		background-color: #{ colors.getColor('white') };
+		margin: 0 120px;
+		padding: #{ fonts.calcSize(100px) } #{ fonts.calcSize(120px) };
+
+		@include media.breakpoint(xl) {
+			padding: #{ fonts.calcSize(60px) } #{ fonts.calcSize(60px) };
+		}
+
+		@include media.breakpoint(lg) {
+			margin-left: calc(10vw - 32px);
+			margin-right: 60px;
+			padding: #{ fonts.calcSize(40px) } #{ fonts.calcSize(60px) };
+		}
+
+		@include media.breakpoint(sm) {
+			margin-left: 0;
+			margin-right: 20px;
+			padding: #{ fonts.calcSize(30px) } 0;
+			padding-left: 20px;
+		}
+	}
+
+	&__title {
+		margin-bottom: 1em;
+		line-height: #{ fonts.calcSize(46px) };
+		font-size: #{ fonts.calcSize(40px) };
+		font-weight: 500;
+		color: #{ colors.getColor('black') };
+	}
+
+	&__description {
+		@include elements.lb-line;
+
+		padding-bottom: 2em;
+		margin-bottom: 2em;
+		line-height: #{ fonts.calcSize(30px) };
+		text-transform: uppercase;
+	}
+
+	&__second-description {
+		color: #{ colors.getColor('grey') };
+		line-height: #{ fonts.calcSize(24px) };
+		font-size: #{ map-get(fonts.$sizes, 'small') };
+	}
+
+	&__sub-items {
+		--horizPadding: 0;
+		--vertPadding: 0;
+
+		margin-bottom: 66px;
+
+		@include media.breakpoint(sm) {
+			--horizPadding: 20px;
+			margin-bottom: 30px;
+		}
+	}
+
+	&__more-button {
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		width: 100%;
+		max-width: 330px;
+
+		&:hover {
+			background-color: var(--secondaryColor);
+			box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+		}
+
+		@include media.breakpoint(sm) {
+			max-width: 160px;
+			margin: 0 20px;
+		}
+	}
+}

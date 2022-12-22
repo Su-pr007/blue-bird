@@ -1,7 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db8fea44-6b12-4e64-8bf2-3f6f1ae7360d" name="Changes" comment="" />
+    <list default="true" id="db8fea44-6b12-4e64-8bf2-3f6f1ae7360d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sun.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/header/arrow_back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/header/fb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/header/fire_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/header/header-logo-mini.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/header/header-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/header/inst.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/header/menu_search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/header/menulist_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/header/rf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/header/triangle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/header/uk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/header/vk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/header/zoom-in.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/main_slider/slide1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/main_slider/slide2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/main_slider/slide3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/main_slider/slide4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon/main_slider/slide5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scriptMain.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scriptSlider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/mixins/animations.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/mixins/animations.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/mixins/animations.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/mixins/breakpoints.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/mixins/breakpoints.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/mixins/breakpoints.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/mixins/colors.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/mixins/colors.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/mixins/colors.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/mixins/elements.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/mixins/elements.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/mixins/flexes.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/mixins/flexes.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/mixins/flexes.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/mixins/fonts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/mixins/fonts.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/mixins/fonts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/additional/borders.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/additional/colors.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/additional/display.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/additional/forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/additional/icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/additional/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/additional/lists.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/additional/popups.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/additional/sidebar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/animations/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/animations/loading.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/blocks/banner/banner-items.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/blocks/banner/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/blocks/benefit.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/blocks/breadcrumb.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/blocks/buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/blocks/destinations.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/blocks/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/blocks/links.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/blocks/main-slider.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/blocks/near.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/blocks/page-image.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/blocks/pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/blocks/review-index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/blocks/review-tour-detail.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/blocks/score-list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/blocks/score-list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/blocks/sliders/about-slider.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/blocks/sliders/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/blocks/sliders/partners-slider.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/blocks/subscribe.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/blocks/tour.type.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/blocks/tours.main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/blocks/tours/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/blocks/tours/tour-duration.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/blocks/tours/tours-list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/blocks/variants.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/global/animations.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/global/fonts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/global/global.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/global/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/layout/footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/layout/grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/layout/header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/layout/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/layout/menu.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/pages/about.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/pages/hot-tours.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/pages/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/pages/path.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/pages/reviews.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/pages/search-page.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/styles/pages/tour-detail.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/breakpoints.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/breakpoints.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/breakpoints.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/headerStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/headerStyle.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/headerStyle.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/main.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/mainSlider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/mainSlider.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/mainSlider.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/naSlychaiVaznixPeregovorov.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/naSlychaiVaznixPeregovorov.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/naSlychaiVaznixPeregovorov.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/remove.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/remove.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/remove.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,7 +131,19 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="SCSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="2BGCSsUfPhS8CidGJO36KwIl5e4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -20,6 +153,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/header-icon" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -30,6 +164,12 @@
       <recent name="C:\Users\shini\OneDrive\Desktop\Новая папка\sun" />
       <recent name="C:\Users\shini\OneDrive\Desktop\Новая папка\sun\mainStyle" />
       <recent name="C:\Users\shini\OneDrive\Desktop\Новая папка\sun\MainStyle" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\shini\OneDrive\Desktop\projects\sun\style" />
+      <recent name="C:\Users\shini\OneDrive\Desktop\projects\sun\icon\mainSlider" />
+      <recent name="C:\Users\shini\OneDrive\Desktop\projects\sun\icon" />
+      <recent name="C:\Users\shini\OneDrive\Desktop\projects\sun\mainStyle" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -44,11 +184,57 @@
       <workItem from="1656588150914" duration="3487000" />
       <workItem from="1656671294963" duration="6583000" />
       <workItem from="1656753318080" duration="4414000" />
-      <workItem from="1656934341305" duration="2580000" />
+      <workItem from="1656934341305" duration="2525000" />
+      <workItem from="1656944955410" duration="4366000" />
+      <workItem from="1657047423079" duration="2139000" />
+      <workItem from="1660827612834" duration="3064000" />
+      <workItem from="1664287405255" duration="476000" />
+      <workItem from="1670196772565" duration="2307000" />
+      <workItem from="1670283911035" duration="3798000" />
+      <workItem from="1670429788563" duration="12000" />
+      <workItem from="1670446251978" duration="1524000" />
+      <workItem from="1670595114149" duration="12893000" />
+      <workItem from="1670668884398" duration="10140000" />
+      <workItem from="1670695624417" duration="5130000" />
+      <workItem from="1670701494786" duration="4512000" />
+      <workItem from="1670760752589" duration="7972000" />
+      <workItem from="1670938529089" duration="8761000" />
+      <workItem from="1671029955475" duration="3913000" />
+      <workItem from="1671190849028" duration="2754000" />
+      <workItem from="1671275387855" duration="15627000" />
+      <workItem from="1671361539515" duration="23733000" />
+      <workItem from="1671404525303" duration="88000" />
+      <workItem from="1671555858103" duration="3967000" />
+      <workItem from="1671654061497" duration="7057000" />
+      <workItem from="1671721204357" duration="7755000" />
+      <workItem from="1671729196973" duration="777000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

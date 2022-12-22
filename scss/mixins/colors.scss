@@ -1,0 +1,28 @@
+$siteColors: (
+	'main': #ec6900,
+	'secondary': #488925,
+	'third': #008FD7,
+	'orange': #d97300,
+	'error-text': #d22,
+	'footer-grey': #cecece,
+	'white': #fff,
+	'dark-white': #fefefe,
+	'small-form_input-borders': #b3b3b3,
+	'table-borders': #e7e7e7,
+	'darker-white': #f2f1f1,
+	'highlight': #f6f9f4,
+	'grey': #898989,
+	'slider-subdescription': #898989,
+	'light-grey': #CDCDCD,
+	'black': #323232,
+	'darkest': #000,
+	'light-blue': #F2F8FB,
+);
+
+@function getColor($color: 'main') {
+	@return map-get($siteColors, $color);
+}
+
+@mixin darkGradient ($offset: 50%) {
+	background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) #{ $offset });
+}

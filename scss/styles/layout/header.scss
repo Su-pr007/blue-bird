@@ -1,0 +1,374 @@
+@use 'sass:math' as Math;
+@use '~scss/mixins/breakpoints' as media;
+@use '~scss/mixins/flexes' as flexes;
+@use '~scss/mixins/colors' as colors;
+@use '~scss/mixins/animations' as anim;
+@use '~scss/mixins/elements' as elements;
+@use '~scss/mixins/fonts' as fonts;
+
+
+#header {
+	font-family: #{ fonts.defaultFontFamily() };
+	position: sticky;
+	top: 0 ;
+	width: 100%;
+	z-index: 1000;
+	background-color: colors.getColor("white");
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+	.header_top {
+		@include flexes.flexColumn;
+		@include elements.container;
+
+		padding-top: #{ fonts.calcSize(14px) };
+		align-items: center;
+		padding-bottom: 12px;
+		width: 96%;
+		z-index: 0;
+
+		.header-top-container {
+			width: 100%;
+			@include flexes.flexRow;
+			align-items: center;
+		}
+		&.show-search-field {
+			.menu-input {
+				margin-top: 15px;
+				margin-bottom: 17px;
+				height: 38px;
+				opacity: 1;
+			}
+
+			@include media.breakpoint(sm) {
+				padding-bottom: 0;
+				width: auto;
+			}
+		}
+
+		.logo-container {
+			width: 272px;
+			height: 80px;
+
+			.logo {
+				display: block;
+				background: url("~images/header/logo_main.svg") center no-repeat;
+				background-size: 272px 80px;
+				width: 272px;
+				height: 80px;
+				cursor: pointer;
+			}
+			@include media.breakpoint(sm) {
+				width: 131px;
+				height: 39px;
+				.logo {
+					background-size: 131px 39px;
+					width: 131px;
+					height: 39px;
+				}
+			}
+		}
+
+		.contact {
+			padding-top: 26px;
+			padding-left: 37px;
+			display: flex;
+			justify-content: space-between;
+			gap: 25px;
+
+			@include media.breakpoint(xl) {
+				gap: 20px;
+			}
+
+			a img {
+				display: block;
+				height: 28px;
+				width: 28px;
+			}
+		}
+
+		.icon-search {
+			display: none;
+			cursor: pointer;
+
+			@include media.breakpoint(lg) {
+				display: block;
+				width: 30px;
+				height: 30px;
+				top: 0;
+				background: url("/local/frontend/src/images/header/11.svg") no-repeat center center;
+				background-size: 30px;
+
+				@include media.breakpoint(sm) {
+					width: 24px;
+					height: 24px;
+					top: 8px;
+					background-size: 24px;
+				}
+			}
+		}
+		.menu-input {
+			margin: 0 auto 0 auto;
+			width: 100%;
+			height: 0;
+			overflow: hidden;
+			display: none;
+			z-index: -1;
+			opacity: 0;
+
+			@include anim.addTransition;
+
+			input {
+				border: 1px solid #D8D8D8;
+				width: 100%;
+				box-sizing: border-box;
+			}
+			button {
+				background: url("/local/frontend/src/images/header/10.svg") no-repeat center center;
+			}
+			&.active {
+				display: block;
+			}
+			@include media.breakpoint(lg) {
+				width: 96%;
+				display: block;
+
+			}
+
+			@include media.breakpoint(sm) {
+				width: 100%;
+			}
+		}
+
+		@include media.breakpoint(lg) {
+
+			position: relative;
+			padding-bottom: 14px;
+			margin: 0;
+			width: 100%;
+
+			.header-top-container {
+				width: 96%;
+
+				@include  media.breakpoint(sm) {
+					width: 100%;
+				}
+			}
+
+			.contact {
+				display: none;
+			}
+
+			.burger {
+				display: block;
+				height: auto;
+				cursor: pointer;
+
+				& > div {
+					background-color: var(--mainColor);
+					width: 25px;
+					height: 3px;
+					margin-bottom: 7px;
+				}
+
+				@include media.breakpoint(sm) {
+					top: 9px;
+					width: 21px;
+
+					& > div {
+						width: 21px;
+						margin-bottom: 5px;
+					}
+				}
+			}
+
+			.input-form {
+				position: relative;
+
+				input {
+					padding-right: 0;
+				}
+			}
+		}
+	}
+
+	.header_bottom {
+		margin-top: 5px;
+		background-color: var(--mainColor);
+
+		.menu-cont {
+			@include flexes.flexRow;
+
+			align-items: center;
+			max-width: 1400px;
+			width: 100%;
+			padding: 10px 0;
+			margin: 0 auto;
+
+			@include media.breakpoint(xxl) {
+				padding: 10px 2%;
+			}
+
+			@include media.breakpoint(lg) {
+				padding: 0;
+			}
+		}
+
+		.logo {
+			position: absolute;
+			display: none;
+			background: url("/local/frontend/src/images/header/1.png") no-repeat;
+			width: 231px;
+			height: 267px;
+			cursor: pointer;
+			top: -113px;
+			left: -5px;
+			z-index: 10;
+		}
+
+		@include media.breakpoint(lg) {
+			position: relative;
+			margin-top: 0;
+
+			.menu-cont {
+				position: unset;
+
+				@include media.breakpoint(sm) {
+					position: relative;
+					width: 100%;
+					margin-left: -20px;
+				}
+			}
+
+			.menu-input {
+				display: none;
+			}
+		}
+	}
+
+	.phone {
+		@include flexes.flexColumnStart;
+
+		color: #898989;
+
+		.grey-notice.phone-number {
+			padding: 0;
+			font-size: 26px;
+			line-height: 30px;
+			text-decoration: none;
+			@include media.breakpoint(xl) {
+				font-size: 20px;
+			}
+
+			&:hover {
+				color: var(--mainColor);
+			}
+		}
+	}
+
+	.book-callback {
+		padding: 15px 46px;
+		background-color: var(--secondaryColor);
+		border-radius: 5px;
+		font-size: 16px;
+		line-height: 18px;
+		margin-bottom: auto;
+		color: #{colors.getColor('white')};
+
+		@include media.breakpoint(xl) {
+			padding: 15px 30px;
+		}
+
+		&:hover {
+			background-color: var(--mainColor);
+			text-decoration: none;
+		}
+	}
+
+	.social {
+		padding-left: 55px;
+
+		.social-list {
+			text-align: end;
+			ul {
+				@include flexes.flexRowEnd;
+
+				align-content: flex-start;
+				column-gap: 5px;
+				height: 28px;
+			}
+		}
+
+		.text p {
+			font-size: 17px;
+			line-height: 20px;
+			padding-top: 5px;
+		}
+		@include media.breakpoint(xl) {
+			padding-left: 5px;
+		}
+	}
+
+	.languages {
+		padding-left: 24px;
+		gap: 12px;
+
+		.grey-notice {
+			text-align: center;
+		}
+
+		.focus, a:hover {
+			.grey-notice {
+				color: var(--mainColor);
+			}
+			img {
+				border: 1px solid var(--mainColor);
+				border-radius: 14px;
+				box-sizing: border-box;
+			}
+		}
+
+		@include media.breakpoint(xl) {
+			padding-left: 0px;
+		}
+
+	}
+
+	@include media.breakpoint(sm) {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+.mobile-menu-shown {
+
+	@include media.breakpoint(lg) {
+		#header .header_top .burger {
+			width: 25px;
+			height: 25px;
+			background: url("/local/frontend/src/images/menu/cross.svg") center no-repeat;
+			background-size: 25px;
+			& > div {
+				display: none;
+			}
+		}
+	}
+}
+
+.grey-notice {
+	font-size: 12px;
+	line-height: 14px;
+	color: #898989;
+	padding-bottom: 7px;
+	text-align: end;
+}
+
+.header {
+
+	&__section-icon {
+		@extend .icon_positioned;
+
+		@include media.breakpoint(lg) {
+			display: none;
+		}
+	}
+}

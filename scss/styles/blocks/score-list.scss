@@ -1,0 +1,21 @@
+@use '~scss/mixins/breakpoints' as media;
+@use '~scss/mixins/colors' as colors;
+@use '~scss/mixins/fonts' as fonts;
+@use '~scss/mixins/flexes' as flexes;
+
+.score-list {
+
+	&__item {
+		@include flexes.flexColumn;
+
+		border-bottom: 1px solid var(--mainColor);
+	}
+
+	&__number {
+		font-size: #{ fonts.calcSize(60px) };
+	}
+
+	&__description {
+		font-size: #{ fonts.calcSize(22px) };
+	}
+}

@@ -1,0 +1,166 @@
+@use 'sass:math';
+@use '~scss/mixins/colors' as colors;
+@use '~scss/mixins/breakpoints' as media;
+@use '~scss/mixins/flexes' as flexes;
+@use '~scss/mixins/fonts' as fonts;
+@use '~scss/mixins/animations' as anim;
+
+.destinations {
+	margin-bottom: 45px;
+	overflow-x: hidden;
+
+	@include media.breakpoint(lg) {
+		margin-bottom: 25px;
+	}
+
+	&-header {
+		margin-bottom: 60px;
+
+		@include media.breakpoint(lg) {
+			margin-bottom: 25px;
+		}
+	}
+
+	&__title {
+		font-size: #{ fonts.calcSize(38px) };
+		line-height: 58px;
+		font-weight: 700;
+
+		@include media.breakpoint(sm) {
+			font-size: 1.5em;
+		}
+	}
+
+	&__subtitle {
+		font-size: 1em;
+		line-height: 24px;
+		color: #010101;
+
+		@include media.breakpoint(sm) {
+			display: none;
+		}
+	}
+
+	&-list {
+		$itemsOffset: 25px;
+		$itemsOffsetMobile: 10px;
+		--inRow: 4;
+
+		margin-top: 12px;
+		margin-inline-end: -#{$itemsOffset};
+		display: grid;
+		grid-template-columns: repeat(var(--inRow), calc(100% / var(--inRow, 1)));
+
+		@include media.breakpoint(xl) {
+			--inRow: 3;
+		}
+
+		@include media.breakpoint(lg) {
+			--inRow: 2;
+		}
+
+		@include media.breakpoint(sm) {
+			--inRow: 1;
+		}
+
+		&__item {
+			height: 250px;
+			margin-bottom: $itemsOffset;
+			padding-inline-end: $itemsOffset;
+			position: relative;
+			font-size: #{ fonts.calcSize(22px) };
+
+			@include media.breakpoint(sm) {
+				margin-bottom: $itemsOffsetMobile;
+			}
+
+			&-link {
+				width: 100%;
+				height: 100%;
+				position: relative;
+				display: block;
+
+				&::before {
+					content: '';
+					display: block;
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 9.2%, rgba(0, 0, 0, 0) 37.8%);
+					pointer-events: none;
+				}
+
+				&:hover{
+					text-decoration: none;
+
+
+					&::before {
+						background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%);
+					}
+				}
+
+				img {
+					min-width: 100%;
+					min-height: 100%;
+					width: 1px;
+					height: 1px;
+					pointer-events: none;
+				}
+
+			}
+			&-text {
+				max-height: 100%;
+				padding: 20px;
+				overflow-y: auto;
+				pointer-events: none;
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				color: #{colors.getColor('white')};
+				font-size: #{ fonts.calcSize(22px) };
+
+				@include media.breakpoint(sm) {
+					font-size: #{ fonts.calcSize(22px) };
+				}
+			}
+
+			&-last {
+				@include media.breakpoint(sm) {
+					margin-bottom: 0;
+					height: auto;
+				}
+			}
+		}
+
+		&__more-button {
+			--color1: #{colors.getColor('white')};
+			--color2: var(--secondaryColor);
+
+			@include flexes.flexColumnCenter;
+			@include anim.addTransition;
+
+			width: 100%;
+			height: 100%;
+			border: 2px solid var(--secondaryColor);
+			padding: 0 70px;
+			text-align: center;
+			margin-bottom: 0;
+			background-color: var(--color1);
+			color: var(--color2);
+
+			&:hover {
+				--color1: var(--secondaryColor);
+				--color2: #{colors.getColor('white')};
+
+				text-decoration: none;
+			}
+
+			@include media.breakpoint(sm) {
+				height: 60px;
+				padding: 0;
+			}
+		}
+	}
+}

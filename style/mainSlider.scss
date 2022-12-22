@@ -1,0 +1,23 @@
+
+.main {
+
+    &__wrapper{
+
+    }
+    &__slider{
+        z-index: 1;
+    }
+
+    &__slider-wrapper{
+        }
+    &__slider-slide{
+            text-align: center;
+        }
+    &__slider-image{
+         img{}
+     }
+    &__slider-pagination{
+
+    }
+
+}

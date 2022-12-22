@@ -1,0 +1,214 @@
+@use '~scss/mixins/breakpoints' as media;
+@use '~scss/mixins/fonts' as fonts;
+@use '~scss/mixins/colors' as colors;
+@use '~scss/mixins/flexes' as flexes;
+@use '~scss/mixins/animations' as animations;
+
+.about-slider {
+	overflow-x: hidden;
+	position: relative;
+	margin-bottom: 175px;
+
+	@include media.breakpoint(md) {
+		margin-bottom: 90px;
+	}
+
+	@include media.breakpoint(sm) {
+		background-color: #{ colors.getColor('light-blue') };
+		margin-bottom: 55px;
+	}
+
+	&__container {
+		--vertPadding: 0;
+
+		overflow: visible;
+
+		@include media.breakpoint(sm) {
+			--horizPadding: 0;
+		}
+	}
+
+	&__content {
+		@include flexes.flexColumn;
+
+		row-gap: #{ fonts.calcSize(24px) };
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		max-width: 30%;
+		max-height: 100%;
+		min-width: 100px;
+		min-height: 100px;
+		padding: 2em;
+		background-color: rgba(0, 0, 0, .85);
+		color: #{ colors.getColor('white') };
+
+		@include media.breakpoint(md) {
+			max-width: 40%;
+		}
+
+		@include media.breakpoint(sm) {
+			@include animations.addTransition('opacity');
+
+			position: static;
+			max-width: initial;
+			background-color: initial;
+			color: #{ colors.getColor('black') };
+
+			opacity: 0;
+		}
+	}
+
+	.swiper-slide-active &__content {
+
+		@include media.breakpoint(sm) {
+			opacity: 1;
+		}
+	}
+
+	&__picture {
+		display: block;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+
+		@include media.breakpoint(xxl) {
+			max-height: 60vw;
+		}
+
+		@include media.breakpoint(md) {
+			max-height: 80vw;
+		}
+
+		@include media.breakpoint(sm) {
+			max-height: 60vw;
+		}
+	}
+
+	&__img {
+		min-width: 100%;
+		min-height: 100%;
+		object-fit: cover;
+
+		@include media.breakpoint(md) {
+			max-height: 80vw;
+		}
+
+		@include media.breakpoint(sm) {
+			max-height: 60vw;
+		}
+	}
+
+	&__title {
+		font-size: #{ fonts.calcSize(24px)};
+		font-weight: bold;
+
+		@include media.breakpoint(sm) {
+			display: none;
+		}
+	}
+
+	&__main-title {
+		display: none;
+		margin: auto;
+		text-align: center;
+		font-family: #{ fonts.getFonts('officina-sans') };
+		font-weight: bold;
+		font-size: #{ fonts.calcSize(38px) };
+		color: #{ colors.getColor('black') };
+
+		@include media.breakpoint(md) {
+			display: block;
+		}
+
+		@include media.breakpoint(sm) {
+			text-align: left;
+		}
+	}
+
+	&__description {
+		font-weight: 300;
+		font-size: #{ fonts.calcSize(16px) };
+		line-height: #{ fonts.calcSize(27px) };
+
+		@include media.breakpoint(sm) {
+			font-size: 16px;
+			line-height: 24px;
+			padding-bottom: 20px;
+		}
+	}
+
+	&__second-description {
+		font-weight: 300;
+		font-size: #{ fonts.calcSize(14px) };
+		line-height: #{ fonts.calcSize(28px) };
+		color: #{ colors.getColor('slider-subdescription') };
+
+		@include media.breakpoint(sm) {
+			font-size: 14px;
+			line-height: 16px;
+		}
+	}
+
+	&__switcher {
+		@include flexes.flexRowStart;
+
+		gap: 30px;
+
+		@include media.breakpoint(sm) {
+			display: none;
+		}
+	}
+
+	&__arrow {
+		color: var(--mainColor);
+		cursor: pointer;
+
+		&:hover {
+			color: #{ colors.getColor('white') };
+		}
+	}
+
+	&__navigation {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: calc((100% - var(--maxContainerWidth)) / 2);
+		cursor: pointer;
+		z-index: 1;
+
+		@include media.breakpoint(xxl) {
+			width: 40px;
+		}
+
+		@include media.breakpoint(sm) {
+			width: 20px;
+		}
+	}
+
+	&__prev {
+		left: 0;
+	}
+
+	&__next {
+		right: 0;
+	}
+
+	.swiper {
+
+		&-wrapper {
+			display: grid;
+			grid-auto-flow: column;
+		}
+
+		&-slide {
+			@include animations.addTransition('opacity');
+
+			opacity: .5;
+
+			&-active {
+				opacity: 1;
+			}
+		}
+	}
+}

@@ -1,0 +1,300 @@
+@use '~scss/mixins/flexes' as flexes;
+@use '~scss/mixins/fonts' as fonts;
+@use '~scss/mixins/colors' as colors;
+@use '~scss/mixins/breakpoints' as media;
+
+.reviews-banner {
+
+    &.page-image {
+        margin-bottom: 40px;
+
+        @include media.breakpoint(sm) {
+            margin-bottom: 0;
+        }
+
+        &__bottom-aligner {
+            @include media.breakpoint(sm) {
+                padding-bottom: 20px;
+            }
+        }
+
+        &__title {
+            @include media.breakpoint(sm) {
+                font-size: 24px;
+                line-height: 28px;
+            }
+        }
+
+        &__subtitle {
+            @include media.breakpoint(sm) {
+                font-size: 12px;
+                line-height: 18px;
+                margin-bottom: 15px;
+            }
+        }
+
+        &__text-container {
+            grid-template-columns: 1fr auto;
+
+            @include media.breakpoint(sm) {
+                grid-template-columns: 1fr;
+            }
+
+            .button-default {
+                padding: 20px 50px;
+                margin: auto 0;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 26px;
+
+                @include media.breakpoint(sm) {
+                    margin: 0 auto 0 0;
+                    font-size: 14px;
+                    line-height: 16px;
+                    padding: 10px 15px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+}
+
+.reviews {
+
+    padding-top: 60px;
+
+    @include media.breakpoint(sm) {
+        padding-top: 20px;
+    }
+
+    &.container {
+        @include media.breakpoint(sm) {
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    &_item {
+        padding: 50px 90px;
+        grid-template-columns: auto 1fr;
+
+        @include media.breakpoint(sm) {
+            padding: 50px 20px;
+            position: relative;
+        }
+
+        &:nth-child(odd) {
+            background-color: #{ colors.getColor('light-blue') };
+        }
+
+        &:nth-child(even) {
+            .reviews_item_sex {
+                order: 2;
+            }
+
+            .reviews_item_info {
+                padding-right: 85px;
+                padding-left: 30px;
+
+                @include media.breakpoint(sm) {
+                    padding: 0;
+                }
+            }
+        }
+
+        &_sex {
+
+            @include media.breakpoint(sm) {
+                position: absolute;
+                top: 50px;
+                right: 20px;
+            }
+
+            svg {
+                @include media.breakpoint(sm) {
+                    width: 73px;
+                    height: 90px;
+                }
+            }
+        }
+
+        &_info {
+            padding-left: 85px;
+
+            @include media.breakpoint(sm) {
+                padding-left: 0px;
+            }
+        }
+
+        &_first {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #{map-get(colors.$siteColors, 'light-grey')};
+            padding-bottom: 25px;
+
+            @include media.breakpoint(sm) {
+                font-size: 12px;
+                line-height: 14px;
+                padding-bottom: 10px;
+            }
+        }
+
+        &_rate {
+            color: var(--mainColor);
+        }
+
+        &_10 {
+            padding-right: 25px;
+
+            @include media.breakpoint(sm) {
+                padding-right: 20px;
+            }
+        }
+
+        &_title {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 23px;
+            color: #{map-get(colors.$siteColors, 'black')};
+            padding-bottom: 20px;
+
+            @include media.breakpoint(sm) {
+                font-size: 16px;
+                line-height: 22px;
+                max-width: 193px;
+                min-height: 86px;
+            }
+        }
+
+        &_hidden-block {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            line-height: #{fonts.calcSize(27px)};
+            max-height: calc(3 * #{fonts.calcSize(27px)});
+            font-size: 16px;
+
+            @include media.breakpoint(sm) {
+                -webkit-line-clamp: 10;
+                font-size: 14px;
+                max-height: calc(10 * #{fonts.calcSize(24px)});
+                line-height: #{fonts.calcSize(24px)};
+            }
+        }
+
+        &_text {
+            font-weight: 400;
+            color: #{map-get(colors.$siteColors, 'grey')};
+        }
+
+        &_last {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #{map-get(colors.$siteColors, 'black')};
+            padding-top: 30px;
+
+            @include media.breakpoint(sm) {
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+    }
+
+    &_show-full {
+        cursor: pointer;
+        padding-top: 20px;
+        font-size: 14px;
+        line-height: 15px;
+        max-width: max-content;
+        height: max-content;
+        color: var(--secondaryColor);
+        border-bottom: 1px dashed var(--secondaryColor);
+    }
+
+    &_buttons {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        padding-top: 95px;
+        padding-bottom: 60px;
+
+        @include media.breakpoint(md) {
+            grid-template-columns: 1fr;
+        }
+
+        @include media.breakpoint(sm) {
+            padding: 50px 20px 20px 20px;
+        }
+    }
+
+    &_forms {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 90px;
+
+        @include media.breakpoint(lg) {
+            gap: 40px;
+        }
+
+        @include media.breakpoint(md) {
+            gap: 30px;
+        }
+
+        @include media.breakpoint(sm) {
+            gap: 10px;
+        }
+
+        a {
+            color: #{map-get(colors.$siteColors, 'white')};
+        }
+
+        .button-default {
+            cursor: pointer;
+            width: 265px;
+            font-size: 22px;
+            line-height: 26px;
+
+            @include media.breakpoint(lg) {
+                width: unset;
+            }
+
+            @include media.breakpoint(sm) {
+                font-size: 14px;
+                line-height: 16px;
+                padding: 12px;
+            }
+
+            &.secondary-color {
+                background-color: var(--secondaryColor);
+            }
+
+            &:hover {
+                background-color: var(--secondaryColor);
+            }
+
+            &.secondary-color:hover {
+                background-color: var(--mainColor);
+            }
+        }
+    }
+
+    &_pagination__block {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        @include media.breakpoint(md) {
+            display: none;
+        }
+    }
+}
+
+.show-full-text {
+    max-height: unset;
+    -webkit-line-clamp: unset;
+}
