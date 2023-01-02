@@ -1,0 +1,68 @@
+@use 'breakpoints' as media;
+
+
+.offers {
+    margin-bottom: 1000px;
+
+    &__label {
+        font-size: 38px;
+        padding: 60px 0 40px 0;
+
+        @include media.breakpoint(xxl) {
+            margin: 0 20px 0 20px;
+        }
+    }
+}
+
+.offers-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+
+    @include media.breakpoint(xxl) {
+        margin: 0 20px 0 20px;
+
+    }
+    @include media.breakpoint(lg) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @include media.breakpoint(md) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include media.breakpoint(sm) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__item {
+        position: relative;
+        background-color: black;
+        height: 250px;
+    }
+
+    &__image {
+
+    }
+
+    &__label {
+        position: absolute;
+        bottom: 20px;
+        color: white;
+        left: 20px;
+    }
+
+    &__all {
+        height: 250px;
+        border: 2px solid darkslateblue;
+        font-size: 24px;
+        color: darkslateblue;
+
+
+        &:hover {
+            color: #1151d1;
+            border-color: #1151d1;
+        }
+    }
+
+
+
+}

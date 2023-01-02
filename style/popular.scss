@@ -1,0 +1,133 @@
+@use 'breakpoints' as media;
+
+
+.popular {
+
+    @include media.breakpoint(xxl) {
+        margin: 0 20px 0 20px;
+    }
+    &__label {
+        padding: 50px 0 40px 0;
+        font-size: 38px;
+        font-weight: 700;
+
+    }
+}
+
+
+.popular-slider {
+
+
+    &__slide {
+
+        display: flex;
+        flex-direction: column;
+        &:last-child{
+            margin-right: 0;
+        }
+        @include media.breakpoint(xxl) {
+
+        }
+    }
+
+    &__main {
+        position: relative;
+        height: 314px;
+        width: 100%;
+        flex: 1 auto;
+
+        @include media.breakpoint(sm) {
+            height: 240px;
+        }
+    }
+
+    &__image {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    &__text {
+        position: absolute;
+        bottom: 10px;
+        color: white;
+        font-size: 22px;
+        padding: 0 20px 0 20px;
+    }
+
+    &__status {
+
+        font-size: 18px;
+        padding: 0 20px 0 20px;
+        background-color: #1151d1;
+        width: 100%;
+        height: 60px;
+        color: white;
+        line-height: 60px;
+        @include media.breakpoint(lg) {
+            height: 49px;
+            line-height: 49px
+        }
+        @include media.breakpoint(md) {
+            height: 38px;
+            line-height: 38px
+        }
+    }
+
+    &__prise {
+        padding: 0 20px 0 20px;
+        background-color: #F2F1F1;
+        width: 100%;
+        height: 86px;
+        display: flex;
+        align-items: center;
+        @include media.breakpoint(lg) {
+            height: 66px;
+        }
+        @include media.breakpoint(md) {
+            display: block;
+            height: 111px;
+        }
+    }
+
+    &__quantity {
+        font-size: 18px;
+        color: black;
+        flex: 1 auto;
+        &:before{
+            content: 'Количество: ';
+        }
+
+        @include media.breakpoint(md) {
+            padding: 15px 0 15px 0;
+        }
+    }
+
+    &__button {
+        text-align: center;
+        width: 140px;
+        height: 45px;
+        line-height: 45px;
+        border-radius: 5px;
+        background-color: darkslateblue;
+        border: none;
+        color: white;
+
+        &:hover{
+            background-color: #1151d1;
+        }
+    }
+
+
+
+}
+    .swiper-button-prev{
+
+        top: 50%;
+        z-index: 10;
+        left: -10px;
+    }
+   .swiper-button-next{
+
+    }

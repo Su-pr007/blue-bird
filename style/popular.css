@@ -1,0 +1,117 @@
+@charset "UTF-8";
+@media screen and (max-width: 1400px) {
+  .offers {
+    margin: 0 20px 0 20px;
+  }
+}
+.offers__label {
+  padding: 50px 0 40px 0;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.popular-slider__slide {
+  display: flex;
+  flex-direction: column;
+}
+.popular-slider__slide:last-child {
+  margin-right: 0;
+}
+.popular-slider__main {
+  position: relative;
+  height: 314px;
+  width: 100%;
+  flex: 1 auto;
+}
+@media screen and (max-width: 576px) {
+  .popular-slider__main {
+    height: 240px;
+  }
+}
+.popular-slider__image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.popular-slider__text {
+  position: absolute;
+  bottom: 10px;
+  color: white;
+  font-size: 22px;
+  padding: 0 20px 0 20px;
+}
+.popular-slider__status {
+  font-size: 18px;
+  padding: 0 20px 0 20px;
+  background-color: #1151d1;
+  width: 100%;
+  height: 60px;
+  color: white;
+  line-height: 60px;
+}
+@media screen and (max-width: 992px) {
+  .popular-slider__status {
+    height: 49px;
+    line-height: 49px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .popular-slider__status {
+    height: 38px;
+    line-height: 38px;
+  }
+}
+.popular-slider__prise {
+  padding: 0 20px 0 20px;
+  background-color: #F2F1F1;
+  width: 100%;
+  height: 86px;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 992px) {
+  .popular-slider__prise {
+    height: 66px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .popular-slider__prise {
+    display: block;
+    height: 111px;
+  }
+}
+.popular-slider__quantity {
+  font-size: 18px;
+  color: black;
+  flex: 1 auto;
+}
+.popular-slider__quantity:before {
+  content: "Количество: ";
+}
+@media screen and (max-width: 768px) {
+  .popular-slider__quantity {
+    padding: 15px 0 15px 0;
+  }
+}
+.popular-slider__button {
+  text-align: center;
+  width: 140px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 5px;
+  background-color: darkslateblue;
+  border: none;
+  color: white;
+}
+.popular-slider__button:hover {
+  background-color: #1151d1;
+}
+
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  left: -10px;
+}
+
+/*# sourceMappingURL=popular.css.map */
