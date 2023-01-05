@@ -1,3 +1,4 @@
+
 new Swiper('.popular-slider', {
 
     loop: true,
