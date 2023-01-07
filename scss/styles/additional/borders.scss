@@ -1,8 +1,0 @@
-@use '~scss/mixins/colors' as colors;
-
-.border-bottom {
-
-	&_black {
-		border-bottom: 1px solid #{ colors.getColor('darkest') };
-	}
-}

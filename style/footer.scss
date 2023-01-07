@@ -1,0 +1,172 @@
+@use 'breakpoints' as media;
+
+
+.footer {
+    color: wheat;
+
+    .footer__wrapper {
+
+        background-color: darkorange;
+
+    }
+
+    .footer__container {
+
+    }
+
+
+}
+
+.footer-top {
+    display: flex;
+    padding: 50px 0 40px 0;
+
+    @include media.breakpoint(xxl) {
+        margin: 0 20px 0 20px;
+    }
+    @include media.breakpoint(sm) {
+        text-align: center;
+         display: block;
+    }
+
+    &__logo {
+        flex: 1 auto;
+        height: 80px;
+
+         @include media.breakpoint(sm) {
+             height: 120px;
+    }
+    }
+
+    &__img {
+        max-height: 100%;
+    }
+
+    &__social {
+
+    }
+
+    &__text {
+        padding: 0 0 15px 0;
+        font-size: 18px;
+        font-weight: 500;
+         @include media.breakpoint(sm) {
+        padding: 15px 0;
+    }
+    }
+
+    &__items {
+
+    }
+
+    &__item {
+        padding-right: 25px;
+        background-color: darkorange;
+    }
+
+    &__img {
+
+    }
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    border-top: 1px solid #1151d1;
+    column-gap: 150px;
+    @include media.breakpoint(xxl) {
+        margin: 0 20px 0 20px;
+    }
+    @include media.breakpoint(lg) {
+        grid-template-columns: 2fr 1fr;
+        column-gap: 80px;
+
+    }
+    @include media.breakpoint(md) {
+        grid-template-columns: 1fr;
+
+
+    }
+
+    &__column {
+        padding: 20px 0 40px 0;
+
+        @include media.breakpoint(lg) {
+            border-bottom: solid 1px #1151d1;
+        }
+    }
+
+}
+
+.footer-info {
+
+    &__text {
+
+    }
+
+    &__contacts {
+        font-size: 18px;
+        padding-top: 50px;
+
+        a {
+            color: #1151d1;
+        }
+
+
+    }
+
+    &__address {
+        padding-bottom: 20px;
+    }
+
+    &__mobile {
+
+    }
+
+    &__email {
+
+    }
+}
+
+
+.footer-menu {
+
+    &__list {
+
+    }
+
+    &__item {
+        padding-bottom: 15px;
+    }
+
+    &__link {
+        font-size: 18px;
+        color: white;
+        font-weight: 500;
+    }
+}
+
+.footer-additional {
+
+    &__link {
+
+    }
+}
+
+.footer-services {
+
+    &__label {
+        font-size: 18px;
+        color: white;
+        font-weight: 500;
+    }
+
+    &__list {
+        padding-top: 15px;
+    }
+
+    &__item {
+        display: block;
+        padding-bottom: 10px;
+    }
+}

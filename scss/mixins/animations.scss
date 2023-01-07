@@ -1,7 +1,0 @@
-@mixin addTransition($property: '', $duration: .5s) {
-
-	-webkit-transition: #{$property} #{$duration};
-	-moz-transition: #{$property} #{$duration};
-	-o-transition: #{$property} #{$duration};
-	transition: #{$property} #{$duration};
-}
