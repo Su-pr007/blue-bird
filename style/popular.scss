@@ -137,7 +137,12 @@
         width: 50px;
 
         @include media.breakpoint(md) {
-           display: none;
+            display: none;
+        }
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: darkslateblue;
+            }
         }
 
         &:after {
@@ -156,10 +161,16 @@
         @include media.breakpoint(md) {
             display: none;
         }
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: darkslateblue;
+            }
+        }
 
         &:after {
             font-size: 30px;
         }
+
     }
 
 

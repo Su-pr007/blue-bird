@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="style/main.css">
+    <script type="text/javascript" rel="stylesheet" src="node_modules/jquery/dist/jquery.min.js"></script>
     <script rel="stylesheet" src="node_modules/swiper/swiper-bundle.min.js"></script>
     <script rel="stylesheet" src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" rel="stylesheet" src="node_modules/jquery/dist/jquery.min.js"></script>
+
 </head>
 <body>
 
@@ -515,73 +516,257 @@
         <div class="order">
             <div class="order__wrapper">
                 <div class="order__container container1">
-                <div class="order__content">
-                    <div class="order__label">Заказ</div>
-                    <div class="order__description">Мы найдём птицу твоей мечты</div>
-                    <div class="order__form">
-                        <input type="text" class="order__input order__input-number" placeholder="Ё-mail">
-                        <input type="text" class="order__input order__input-product" placeholder="Вид товара">
-                        <input type="text" class="order__input order__input-description" placeholder="Комментарий">
+                    <div class="order__content">
+                        <div class="order__label">Заказ</div>
+                        <div class="order__description">Мы найдём птицу твоей мечты</div>
+                        <div class="order__form">
+                            <input type="text" class="order__input order__input-number" placeholder="Ё-mail">
+                            <input type="text" class="order__input order__input-product" placeholder="Вид товара">
+                            <input type="text" class="order__input order__input-description" placeholder="Комментарий">
 
-                        <button class="order__button">Отправить</button>
+                            <button class="order__button">Отправить</button>
 
+                        </div>
+                        <img src="icon/order/order-image.png" alt="" class="order__image">
                     </div>
-                    <img src="icon/order/order-image.png" alt="" class="order__image">
-                </div>
 
+                </div>
             </div>
         </div>
-    </div>
 
         <div class="review">
             <div class="review__wrapper">
                 <div class="review__container container1">
-                    <div class="review__label"></div>
+                    <div class="review__label">Отзовы довольных клиентов</div>
                     <div class="review-slider swiper">
                         <div class="review-slider__wrapper swiper-wrapper">
                             <div class="review-slider__slide swiper-slide">
                                 <div class="review-slider__top">
-                                    <div class="review-slider__logo"></div>
-                                    <div class="review-slider__logo-title"></div>
+                                    <img src="icon/review/1.jpg" alt="" class="review-slider__logo">
+                                    <div class="review-slider__top-content">
+                                        <div class="rating">
+                                            <div class="rating__body">
+                                                <div class="rating__value" data-value="1"></div>
+                                                <div class="rating__items">
+                                                    <input type="radio" class="rating__item" value="" name="rating">
+                                                    <input type="radio" class="rating__item" value="" name="rating">
+                                                    <input type="radio" class="rating__item" value="" name="rating">
+                                                    <input type="radio" class="rating__item" value="" name="rating">
+                                                    <input type="radio" class="rating__item" value="" name="rating">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="review-slider__logo-title">Голубь</div>
+                                    </div>
                                 </div>
                                 <div class="review-slider__main">
-                                    <div class="review-slider__user"></div>
-                                    <div class="review-slider__text"></div>
+                                    <div class="review-slider__user">Lorem</div>
+                                    <div class="review-slider__text ">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, autem
+                                        beatae eius esse est et expedita fugiat illo iure laboriosam nisi non nulla
+                                        quia repellendus repudiandae voluptatem voluptatibus? Obcaecati,
+                                        perspiciatis!
+
+                                        Deleniti illo nemo placeat provident quos repellat vero? Ad distinctio
+                                        dolorem doloremque minima nobis reiciendis sint totam! Alias aspernatur
+                                        beatae delectus dignissimos harum ipsum magnam, maiores, praesentium quae
+                                        quibusdam voluptatibus!
+
+                                         Deleniti illo nemo placeat provident quos repellat vero? Ad distinctio
+                                        dolorem doloremque minima nobis reiciendis sint totam! Alias aspernatur
+                                        beatae delectus dignissimos harum ipsum magnam, maiores, praesentium quae
+                                        quibusdam voluptatibus!
+                                    </div>
+
                                 </div>
                             </div>
                             <div class="review-slider__slide swiper-slide">
                                 <div class="review-slider__top">
-                                    <div class="review-slider__logo"></div>
-                                    <div class="review-slider__logo-title"></div>
+                                    <img src="icon/review/2.jpg" alt="" class="review-slider__logo">
+                                    <div class="review-slider__top-content">
+
+                                        <div class="rating">
+                                            <div class="rating__body">
+                                                <div class="rating__value" data-value="1.75"></div>
+                                                <div class="rating__items">
+                                                    <input type="radio" class="rating__item" value="" name="rating">
+                                                    <input type="radio" class="rating__item" value="" name="rating">
+                                                    <input type="radio" class="rating__item" value="" name="rating">
+                                                    <input type="radio" class="rating__item" value="" name="rating">
+                                                    <input type="radio" class="rating__item" value="" name="rating">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="review-slider__logo-title">Зелёная птичка</div>
+                                    </div>
                                 </div>
                                 <div class="review-slider__main">
-                                    <div class="review-slider__user"></div>
-                                    <div class="review-slider__text"></div>
+                                    <div class="review-slider__user">Lorem</div>
+                                    <div class="review-slider__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, autem
+                                        beatae eius esse est et expedita fugiat illo iure laboriosam nisi non nulla
+                                        quia repellendus repudiandae voluptatem voluptatibus? Obcaecati,
+                                        perspiciatis!
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, autem
+                                        beatae eius esse est et expedita fugiat illo iure laboriosam nisi non nulla
+                                        quia repellendus repudiandae voluptatem voluptatibus? Obcaecati,
+                                        perspiciatis!
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, autem
+                                        beatae eius esse est et expedita fugiat illo iure laboriosam nisi non nulla
+                                        quia repellendus repudiandae voluptatem voluptatibus? Obcaecati,
+                                        perspiciatis!
+                                    </div>
                                 </div>
                             </div>
                             <div class="review-slider__slide swiper-slide">
                                 <div class="review-slider__top">
-                                    <div class="review-slider__logo"></div>
-                                    <div class="review-slider__logo-title"></div>
+                                    <img src="icon/review/3.jpg" alt="" class="review-slider__logo">
+                                    <div class="review-slider__top-content">
+
+                                        <div class="rating">
+                                            <div class="rating__body">
+                                                <div class="rating__value" data-value="5"></div>
+                                                <div class="rating__items">
+                                                    <input type="radio" class="rating__item" value="" name="rating">
+                                                    <input type="radio" class="rating__item" value="" name="rating">
+                                                    <input type="radio" class="rating__item" value="" name="rating">
+                                                    <input type="radio" class="rating__item" value="" name="rating">
+                                                    <input type="radio" class="rating__item" value="" name="rating">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="review-slider__logo-title">Воробушек</div>
+                                    </div>
                                 </div>
                                 <div class="review-slider__main">
-                                    <div class="review-slider__user"></div>
-                                    <div class="review-slider__text"></div>
+                                    <div class="review-slider__user">Lorem</div>
+                                    <div class="review-slider__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, autem
+                                        beatae eius esse est et expedita fugiat illo iure laboriosam nisi non nulla
+                                        quia repellendus repudiandae voluptatem voluptatibus? Obcaecati,
+                                        perspiciatis!
+                                    </div>
                                 </div>
                             </div>
+                            <div class="review-slider__slide swiper-slide">
+                                <div class="review-slider__top">
+                                    <img src="icon/review/4.jpg" alt="" class="review-slider__logo">
+                                    <div class="review-slider__top-content">
+
+                                        <div class="rating">
+                                            <div class="rating__body">
+                                                <div class="rating__value" data-value="4"></div>
+                                                <div class="rating__items">
+                                                    <input type="radio" class="rating__item" value="" name="rating">
+                                                    <input type="radio" class="rating__item" value="" name="rating">
+                                                    <input type="radio" class="rating__item" value="" name="rating">
+                                                    <input type="radio" class="rating__item" value="" name="rating">
+                                                    <input type="radio" class="rating__item" value="" name="rating">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="review-slider__logo-title">Фиолетовая птичка</div>
+                                    </div>
+                                </div>
+                                <div class="review-slider__main">
+                                    <div class="review-slider__user">Lorem</div>
+                                    <div class="review-slider__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, autem
+                                        beatae eius esse est et expedita fugiat illo iure laboriosam nisi non nulla
+                                        quia repellendus repudiandae voluptatem voluptatibus? Obcaecati,
+                                        perspiciatis!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-slider__slide swiper-slide">
+                                <div class="review-slider__top">
+                                    <img src="icon/review/5.jpg" alt="" class="review-slider__logo">
+                                    <div class="review-slider__top-content">
+
+                                        <div class="rating">
+                                            <div class="rating__body">
+                                                <div class="rating__value" data-value="3.4"></div>
+                                                <div class="rating__items">
+                                                    <input type="radio" class="rating__item" value="" name="rating">
+                                                    <input type="radio" class="rating__item" value="" name="rating">
+                                                    <input type="radio" class="rating__item" value="" name="rating">
+                                                    <input type="radio" class="rating__item" value="" name="rating">
+                                                    <input type="radio" class="rating__item" value="" name="rating">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="review-slider__logo-title">Красная птичка</div>
+                                    </div>
+                                </div>
+                                <div class="review-slider__main">
+                                    <div class="review-slider__user">Lorem</div>
+                                    <div class="review-slider__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, autem
+                                        beatae eius esse est et expedita fugiat illo iure laboriosam nisi non nulla
+                                        quia repellendus repudiandae voluptatem voluptatibus? Obcaecati,
+                                        perspiciatis!</div>
+                                </div>
+                            </div>
+
                         </div>
+
                     </div>
+                    <div class="review-slider__button-prev swiper-button-prev"></div>
+                    <div class="review-slider__button-next swiper-button-next"></div>
+
                 </div>
             </div>
         </div>
     </div>
 </main>
 
+<footer class="footer">
+    <div class="footer__wrapper">
+        <div class="footer__container container">
+            <div class="footer__top">
+                <img src="" alt="" class="footer__logo">
+                <div class="footer__social">
+                    <div class="footer__social-text"></div>
+                    <div class="footer__social-item"></div>
+                </div>
+            </div>
+
+            <div class="footer__main">
+                <div class="footer__column">
+                     <div class="footer__info">
+                    <div class="footer__info-text"></div>
+                    <div class="footer__info-contacts"></div>
+                </div>
+                </div>
+            <div class="footer__column">
+                <div class="footer__menu">
+                    <div class="footer__menu-list"></div>
+                    <div class="footer__additional"></div>
+                </div>
+            </div>
+            <div class="footer__column">
+                <div class="footer__services">
+                    <div class="footer__services-label"></div>
+                    <div class="footer__services-list">
+                        <div class="footer__services-item"></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
 
 <script rel="stylesheet" src="script/scriptHeader.js"></script>
 <script rel="stylesheet" src="script/scriptSlider.js"></script>
 <script rel="stylesheet" src="script/scriptPopular.js "></script>
 <script rel="stylesheet" src="script/scriptOffers.js "></script>
+<script rel="stylesheet" src="script/scriptReview.js "></script>
+<script rel="stylesheet" src="script/scriptRating.js "></script>
 
 </body>
 </html>

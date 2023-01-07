@@ -1,0 +1,52 @@
+@use 'breakpoints' as media;
+
+.rating {
+
+    &__body {
+        font-size: 40px;
+        position: relative;
+
+        &:before {
+            content: '★★★★★';
+            color: #CDCDCD;
+        }
+    }
+
+    &__value {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0    ;
+        height: 100%;
+        overflow: hidden;
+
+        &:before {
+            content: '★★★★★';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: #1151d1;
+        }
+    }
+
+    &__items {
+        position: absolute;
+        height: 100%;
+        width: 80%;
+        display: flex;
+        top: 0;
+        left: 0;
+    }
+
+    &__item {
+        color: #CDCDCD;
+        cursor: pointer;
+        font-size: 35px;
+        flex: 0 0 20%;
+        height: 100%;
+        opacity: 0;
+
+    }
+}
