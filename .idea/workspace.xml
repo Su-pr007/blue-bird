@@ -1,92 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db8fea44-6b12-4e64-8bf2-3f6f1ae7360d" name="Changes" comment="review">
-      <change afterPath="$PROJECT_DIR$/style/modal-window.scss" afterDir="false" />
+    <list default="true" id="db8fea44-6b12-4e64-8bf2-3f6f1ae7360d" name="Changes" comment="footer">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icon/footer/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/icon/footer/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icon/header/header-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/icon/header/header-logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/main.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/mixins/animations.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/mixins/animations.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/mixins/animations.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/mixins/breakpoints.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/mixins/breakpoints.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/mixins/breakpoints.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/mixins/colors.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/mixins/colors.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/mixins/colors.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/mixins/elements.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/mixins/elements.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/mixins/flexes.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/mixins/flexes.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/mixins/flexes.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/mixins/fonts.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/mixins/fonts.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/mixins/fonts.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/additional/borders.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/additional/colors.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/additional/display.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/additional/forms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/additional/icons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/additional/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/additional/lists.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/additional/popups.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/additional/sidebar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/animations/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/animations/loading.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/blocks/banner/banner-items.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/blocks/banner/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/blocks/benefit.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/blocks/breadcrumb.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/blocks/buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/blocks/destinations.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/blocks/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/blocks/links.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/blocks/main-slider.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/blocks/near.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/blocks/page-image.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/blocks/pagination.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/blocks/review-index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/blocks/review-tour-detail.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/blocks/score-list.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/blocks/score-list.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/blocks/sliders/about-slider.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/blocks/sliders/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/blocks/sliders/partners-slider.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/blocks/subscribe.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/blocks/tour.type.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/blocks/tours.main.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/blocks/tours/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/blocks/tours/tour-duration.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/blocks/tours/tours-list.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/blocks/variants.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/global/animations.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/global/fonts.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/global/global.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/global/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/layout/footer.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/layout/grid.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/layout/header.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/layout/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/layout/menu.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/pages/about.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/pages/hot-tours.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/pages/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/pages/path.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/pages/reviews.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/pages/search-page.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles/pages/tour-detail.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/headerStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/headerStyle.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style/header.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/headerStyle.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style/main.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/naSlychaiVaznixPeregovorov.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/naSlychaiVaznixPeregovorov.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/naSlychaiVaznixPeregovorov.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/review.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/review.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/modal-window.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style/modal-window.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +121,9 @@
       <workItem from="1672828486695" duration="597000" />
       <workItem from="1672930269675" duration="23833000" />
       <workItem from="1673000893525" duration="12260000" />
-      <workItem from="1673094505966" duration="13275000" />
+      <workItem from="1673094505966" duration="14980000" />
+      <workItem from="1673121736779" duration="4784000" />
+      <workItem from="1673175896808" duration="761000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1671730321888</created>
@@ -231,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673096275449</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="footer">
+      <created>1673119246930</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673119246930</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +205,7 @@
     <MESSAGE value="popular-slider, offers" />
     <MESSAGE value="order" />
     <MESSAGE value="review" />
-    <option name="LAST_COMMIT_MESSAGE" value="review" />
+    <MESSAGE value="footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="footer" />
   </component>
 </project>

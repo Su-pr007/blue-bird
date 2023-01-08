@@ -29,7 +29,7 @@ $blockClass: 'header';
 
         @include media.breakpoint(lg) {
             position: fixed;
-
+            z-index: 11;
 
         }
     }

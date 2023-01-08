@@ -7,12 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="style/main.css">
     <script type="text/javascript" rel="stylesheet" src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script rel="stylesheet" src="node_modules/swiper/swiper-bundle.min.js"></script>
-    <script rel="stylesheet" src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+
 
 </head>
 <body>
@@ -33,27 +32,17 @@
                         <img src="icon/header/header-logo.png" alt="" class="logo__icon">
                     </div>
 
-
                     <div class="call ">
                         <div class="call__phone ">
                             <div class="call__label">Бесплатно по РФ</div>
                             <div class="call__number">8 800 555-35-35</div>
 
                         </div>
-                        <a data-fancybox="modal-window" href="#modal-window" class="call__button">
+
+                        <a data-fancybox href="#hidden-content" class="call__button">
                             Заказать звонок
                         </a>
-                         <div data-fancybox class="modal-window" id="modal-window">
-                                <div class="modal-window__field">
-                                    <div class="modal-window__label">Имя</div>
-                                    <input type="text" class="modal-window__input">
-                                </div>
-                                 <div class="modal-window__field">
-                                    <div class="modal-window__label">Номер телефона</div>
-                                    <input type="number" class="modal-window__input">
-                                </div>
-                                <div class="modal-window__button">Отправить</div>
-                            </div>
+
                     </div>
 
                     <div class="contacts ">
@@ -97,23 +86,12 @@
                         <div class="mobile-call ">
                             <div class="mobile-call__phone">
                                 <div class="mobile-call__label">Бесплатно по РФ</div>
-                                <div class="mobile-call__number">8  555-35-35</div>
-
+                                <div class="mobile-call__number">8 555-35-35</div>
                             </div>
-                            <a   class="mobile-call__button">
+                            <a class="mobile-call__button" data-fancybox href="#hidden-content">
                                 Заказать звонок
                             </a>
-                            <div class="modal-window">
-                                <div class="modal-window__field">
-                                    <div class="modal-window__label">Имя</div>
-                                    <input type="text" class="modal-window__input">
-                                </div>
-                                 <div class="modal-window__field">
-                                    <div class="modal-window__label">Номер телефона</div>
-                                    <input type="number" class="modal-window__input">
-                                </div>
-                                <div class="modal-window__button">Отправить</div>
-                            </div>
+
                         </div>
 
                         <div class="mobile-country ">
@@ -316,7 +294,17 @@
             </div>
 
         </div>
-
+        <div class="modal-window" id="hidden-content">
+            <div class="modal-window__field">
+                <div class="modal-window__label">Имя</div>
+                <input type="text" class="modal-window__input">
+            </div>
+            <div class="modal-window__field">
+                <div class="modal-window__label">Номер телефона</div>
+                <input type="text" class="modal-window__input">
+            </div>
+            <div class="modal-window__button">Отправить</div>
+        </div>
     </div>
 
 
@@ -805,21 +793,15 @@
                             </li>
                             <li class="footer-menu__item">
                                 <a href="" class="footer-menu__link">Заказы </a>
-
                             </li>
                             <li class="footer-menu__item">
                                 <a href="" class="footer-menu__link">Сотрудничество</a>
-
-
                             </li>
                             <li class="footer-menu__item">
-
                                 <a href="" class="footer-menu__link">Клиентам</a>
-
                             </li>
                             <li class="footer-menu__item">
                                 <a href="" class="footer-menu__link">О нас</a>
-
                             </li>
                             <li class="footer-menu__item">
                                 <a href="" class="footer-menu__link">Блог</a>
