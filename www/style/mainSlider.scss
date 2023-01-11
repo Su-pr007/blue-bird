@@ -4,39 +4,30 @@
 .main {
 
     &__wrapper {
-        @include media.breakpoint(lg){
+        @include media.breakpoint(lg) {
             padding-top: 65px;
         }
     }
-
-
 }
 
 .slider {
     z-index: 1;
 
-
-
-
     &__wrapper {
-
-
         object-fit: cover;
-
     }
 
     &__slide {
         height: 770px;
         width: 100%;
 
-
-        @include media.breakpoint(lg){
+        @include media.breakpoint(lg) {
             height: 570px;
         }
-        @include media.breakpoint(md){
+        @include media.breakpoint(md) {
             height: 440px;
         }
-        @include media.breakpoint(sm){
+        @include media.breakpoint(sm) {
             height: 340px;
         }
     }
@@ -50,8 +41,8 @@
             object-fit: cover;
         }
     }
-    &__description{
 
+    &__description {
         z-index: 4;
         position: absolute;
         bottom: 120px;
@@ -65,48 +56,51 @@
             width: calc(1400px - (1400px - 100vw) - 240px);
 
         }
-         @include media.breakpoint(lg){
+        @include media.breakpoint(lg) {
             font-size: 30px;
             bottom: 80px;
         }
-        @include media.breakpoint(md){
+        @include media.breakpoint(md) {
             width: 100%;
         }
 
     }
-    &__label{
+
+    &__label {
         color: black;
         font-size: 40px;
-        &_white{
-             color: white;
+
+        &_white {
+            color: white;
         }
 
-        @include media.breakpoint(lg){
+        @include media.breakpoint(lg) {
             font-size: 36px;
         }
-        @include media.breakpoint(md){
-           font-size: 30px;
+        @include media.breakpoint(md) {
+            font-size: 30px;
         }
-        @include media.breakpoint(sm){
+        @include media.breakpoint(sm) {
             font-size: 24px;
         }
     }
 
 
-    &__text{
+    &__text {
         color: black;
         font-size: 20px;
-        &_white{
-             color: white;
+
+        &_white {
+            color: white;
         }
 
-        @include media.breakpoint(lg){
+        @include media.breakpoint(lg) {
             display: none;
         }
 
     }
 
-    &__button{
+    &__button {
         z-index: 4;
         width: 212px;
         height: 60px;
@@ -119,22 +113,24 @@
         right: 0;
         margin-right: calc(50% - 700px);
 
-        &:hover{
+        &:hover {
             background-color: #1151d1;
         }
-        @include media.breakpoint(xxl){
-               margin-right: 20px;
+
+        @include media.breakpoint(xxl) {
+            margin-right: 20px;
         }
-        @include media.breakpoint(lg){
+        @include media.breakpoint(lg) {
             bottom: 70px;
         }
-        @include media.breakpoint(md){
+        @include media.breakpoint(md) {
             bottom: 30px;
             width: 140px;
             height: 40px;
             border-radius: 5px;
         }
     }
+
     &__pagination {
 
         margin: 0 0 60px 0;
@@ -142,10 +138,10 @@
         text-align: left;
         margin-left: calc(50% - 700px);
 
-        @include media.breakpoint(xxl){
-              margin-left: 20px;
+        @include media.breakpoint(xxl) {
+            margin-left: 20px;
         }
-        @include media.breakpoint(lg){
+        @include media.breakpoint(lg) {
             margin: 0 0 20px 20px;
         }
     }
@@ -156,9 +152,9 @@
         height: 20px;
         width: 20px;
 
-         @include media.breakpoint(sm){
-             height: 16px;
-             width: 16px;
+        @include media.breakpoint(sm) {
+            height: 16px;
+            width: 16px;
         }
     }
 
@@ -171,10 +167,9 @@
     }
 }
 
-.container2{
+.container2 {
     position: relative;
     max-width: 1400px;
     margin: 0 auto;
-
 }
 

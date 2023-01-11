@@ -705,13 +705,13 @@ ol {
   content: url("../icon/header/arrow_back.png");
 }
 
-.popular__container {
-  position: relative;
-}
 @media screen and (max-width: 1400px) {
   .popular {
     margin: 0 20px 0 20px;
   }
+}
+.popular__container {
+  position: relative;
 }
 .popular__label {
   padding: 50px 0 40px 0;
@@ -1398,7 +1398,6 @@ ol {
 .modal-window {
   display: none;
   width: 320px;
-  height: 380px;
 }
 .modal-window .modal-window__label {
   font-size: 24px;
@@ -1421,6 +1420,7 @@ ol {
   align-items: center;
   line-height: 60px;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

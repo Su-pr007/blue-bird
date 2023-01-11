@@ -10,4 +10,4 @@ new Swiper('.slider', {
         delay: 2000,
     },
 
-})
+});

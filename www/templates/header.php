@@ -301,7 +301,8 @@
                 <div class="modal-window__label">Номер телефона</div>
                 <input type="text" class="modal-window__input" name="number">
             </div>
-            <input type="submit" value="Отправить" class="modal-window__button">
+            <button  type="submit"  class="modal-window__button" >Отправить</button>
+            <div class="message-alert" ></div>
         </form>
     </div>
 

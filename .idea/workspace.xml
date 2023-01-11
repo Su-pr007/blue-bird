@@ -1,106 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db8fea44-6b12-4e64-8bf2-3f6f1ae7360d" name="Changes" comment="modal-window">
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/nginx/conf.d/default.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/php/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/blocks/main-slider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/blocks/order.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/blocks/popular.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/blocks/review.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/php/order_call.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/script/ajax.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/style/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/templates/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/templates/header.php" afterDir="false" />
+    <list default="true" id="db8fea44-6b12-4e64-8bf2-3f6f1ae7360d" name="Changes" comment="что-то сделал">
+      <change afterPath="$PROJECT_DIR$/www/php/order.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/php/order_product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/footer/fb.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/footer/fb.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/footer/inst.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/footer/inst.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/footer/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/footer/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/footer/vk.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/footer/vk.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/header/arrow_back.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/header/arrow_back.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/header/fb.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/header/fb.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/header/fire_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/header/fire_icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/header/header-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/header/header-logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/header/inst.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/header/inst.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/header/menu_search.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/header/menu_search.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/header/menulist_arrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/header/menulist_arrow.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/header/rf.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/header/rf.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/header/triangle.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/header/triangle.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/header/uk.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/header/uk.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/header/vk.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/header/vk.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/header/zoom-in.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/header/zoom-in.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/main_slider/slide1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/main_slider/slide1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/main_slider/slide2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/main_slider/slide2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/main_slider/slide3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/main_slider/slide3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/main_slider/slide4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/main_slider/slide4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/main_slider/slide5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/main_slider/slide5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/offers/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/offers/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/offers/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/offers/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/offers/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/offers/3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/offers/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/offers/4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/offers/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/offers/5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/offers/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/offers/6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/offers/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/offers/7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/order/background.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/order/background.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/order/order-image.png" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/order/order-image.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/popular/blue_bird.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/popular/blue_bird.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/popular/green_bird.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/popular/green_bird.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/popular/purple_bird.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/popular/purple_bird.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/popular/red_bird.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/popular/red_bird.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/popular/yellow_bird.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/popular/yellow_bird.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/review/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/review/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/review/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/review/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/review/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/review/3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/review/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/review/4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/review/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/www/icon/review/5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/www/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/scriptHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/script/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/scriptOffers.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/script/offers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/scriptPopular.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/script/popular.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/scriptRating.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/script/rating.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/scriptReview.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/script/review.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/scriptSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/script/slider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/breakpoints.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/breakpoints.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/breakpoints.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/breakpoints.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/breakpoints.scss" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/breakpoints.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/footer.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/footer.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/header.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/header.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/main.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/mainSlider.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/mainSlider.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/mainSlider.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/mainSlider.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/mainSlider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/mainSlider.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/modal-window.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/modal-window.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/modal-window.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/modal-window.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/modal-window.scss" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/modal-window.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/offers.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/offers.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/offers.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/offers.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/offers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/offers.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/order.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/order.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/order.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/order.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/order.scss" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/order.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/popular.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/popular.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/popular.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/popular.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/popular.scss" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/popular.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/rating.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/rating.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/rating.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/rating.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/rating.scss" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/rating.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/remove.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/remove.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/remove.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/remove.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/remove.scss" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/remove.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/review.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/review.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/review.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/review.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/review.scss" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/review.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/blocks/main-slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/blocks/main-slider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/blocks/offers.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/blocks/offers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/blocks/order.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/blocks/order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/blocks/popular.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/blocks/popular.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/php/order_call.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/script/ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/script/ajax.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/script/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/script/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/script/offers.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/script/offers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/script/popular.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/script/popular.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/script/rating.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/script/rating.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/script/review.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/script/review.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/script/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/script/slider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/style/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/style/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/style/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/style/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/style/mainSlider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/mainSlider.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/style/modal-window.scss" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/modal-window.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/style/offers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/offers.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/style/order.scss" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/order.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/style/popular.scss" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/popular.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/style/review.scss" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/review.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/templates/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/templates/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +142,8 @@
       <workItem from="1673199481333" duration="8059000" />
       <workItem from="1673207645609" duration="9004000" />
       <workItem from="1673260235732" duration="24806000" />
-      <workItem from="1673351997013" duration="16803000" />
+      <workItem from="1673351997013" duration="19858000" />
+      <workItem from="1673429435129" duration="12340000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1671730321888</created>
@@ -265,7 +194,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673176671085</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="что-то сделал">
+      <created>1673379185207</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1673379185207</updated>
+    </task>
+    <task id="LOCAL-00009" summary="что-то сделал">
+      <created>1673379264905</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1673379264905</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,6 +247,7 @@
     <MESSAGE value="order" />
     <MESSAGE value="review" />
     <MESSAGE value="modal-window" />
-    <option name="LAST_COMMIT_MESSAGE" value="modal-window" />
+    <MESSAGE value="что-то сделал" />
+    <option name="LAST_COMMIT_MESSAGE" value="что-то сделал" />
   </component>
 </project>

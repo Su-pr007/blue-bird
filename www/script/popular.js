@@ -1,4 +1,3 @@
-
 new Swiper('.popular-slider', {
 
     loop: true,
@@ -25,14 +24,12 @@ new Swiper('.popular-slider', {
 })
 
 
-
-
 let q = $('.popular-slider__quantity')
 
-for (let i = 0; i < q.length; i++){
-    if(q[i].innerText == 0){
+for (let i = 0; i < q.length; i++) {
+    if (q[i].innerText == 0) {
         $('.popular-slider__status')[i].innerText = 'Отсутствует'
-    }else {
+    } else {
         $('.popular-slider__status')[i].innerText = 'В наличие'
     }
 }

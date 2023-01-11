@@ -24,16 +24,15 @@ new Swiper('.review-slider', {
 })
 
 
-
-$('.review-slider__text').each(function (){
-    if ($(this).height() > 105){
+$('.review-slider__text').each(function () {
+    if ($(this).height() > 105) {
         $(this).addClass('review-slider__text_short')
         $(this).after('<button class="review-slider__button-all">Показать полностью</button>')
     }
 })
 
 $('.review-slider__button-all').click(
-    function (){
+    function () {
         $(this).parent().find('.review-slider__text').toggleClass('review-slider__text_active')
         console.log($(this).parent().find('.review-slider__text').height())
     }

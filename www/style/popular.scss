@@ -3,21 +3,19 @@
 
 .popular {
 
-    &__container {
-        position: relative;
-    }
-
     @include media.breakpoint(xxl) {
         margin: 0 20px 0 20px;
+    }
+
+    &__container {
+        position: relative;
     }
 
     &__label {
         padding: 50px 0 40px 0;
         font-size: 38px;
         font-weight: 700;
-
     }
-
 }
 
 
@@ -25,10 +23,8 @@
     position: relative;
 
     &__slide {
-
         display: flex;
         flex-direction: column;
-
         &:last-child {
             margin-right: 0;
         }

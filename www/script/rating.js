@@ -1,7 +1,6 @@
-
-$('.rating__value').each(function (){
+$('.rating__value').each(function () {
     value = $(this).data('value');
-    $(this).css('width', value/0.05 + "%"  );
+    $(this).css('width', value / 0.05 + "%");
 });
 
 
