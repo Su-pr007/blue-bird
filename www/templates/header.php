@@ -1,3 +1,6 @@
+<?php require $_SERVER['DOCUMENT_ROOT'] . '/core/prolog.php';
+global $con;
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -104,175 +107,8 @@
                         </div>
                     </div>
 
-                    <ul class="menu-list menu-list_header">
-                        <li class="menu-list__item">
-                            <a href="" class="menu-list__link">Виды птиц</a>
-                            <span class="menu-list__arrow">
-                                <img class="" src="icon/header/menulist_arrow.png" alt="">
-                            </span>
+                    <?php require 'blocks/menu.php'; ?>
 
-                            <ul class="sublist ">
-                                <div class="arrow_back">
-                                    Назад
-                                </div>
-
-                                <li class="sublist__item">
-                                    <a href="">Виды птиц 1</a>
-
-                                </li>
-                                <li class="sublist__item">
-                                    <a href="">Виды птиц 2</a>
-                                </li>
-                                <li class="sublist__item">
-                                    <a href="">Виды птиц 3</a>
-                                </li>
-                                <li class="sublist__item">
-                                    <a href="">Виды птиц 4</a>
-                                </li>
-                                <li class="sublist__item">
-                                    <a href="">Виды птиц 5</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu-list__item">
-                            <a href="" class="menu-list__link">Популярное </a>
-                            <span class="menu-list__arrow">
-                                <img class="" src="icon/header/menulist_arrow.png" alt="">
-                            </span>
-
-                            <ul class="sublist ">
-                                <div class="arrow_back">
-                                    Назад
-                                </div>
-
-                                <li class="sublist__item">
-                                    <a href="">Популярное</a>
-                                </li>
-                                <li class="sublist__item">
-                                    <a href="">Популярное 2</a>
-                                </li>
-                                <li class="sublist__item">
-                                    <a href="">Популярное 3</a>
-                                </li>
-                                <li class="sublist__item">
-                                    <a href="">Популярное 4</a>
-                                </li>
-                                <li class="sublist__item">
-                                    <a href="">Популярное 5</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu-list__item">
-                            <a href="" class="menu-list__link">Заказы </a>
-                            <span class="menu-list__arrow">
-                                <img class="" src="icon/header/menulist_arrow.png" alt="">
-                            </span>
-
-                            <ul class="sublist ">
-                                <div class="arrow_back">
-                                    Назад
-                                </div>
-
-                                <li class="sublist__item">
-                                    <a href="">Заказы 1</a>
-                                </li>
-                                <li class="sublist__item">
-                                    <a href="">Заказы 2</a>
-                                </li>
-                                <li class="sublist__item">
-                                    <a href="">Заказы 3</a>
-                                </li>
-                                <li class="sublist__item">
-                                    <a href="">Заказы 4</a>
-                                </li>
-                                <li class="sublist__item">
-                                    <a href="">Заказы 5</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu-list__item">
-                            <a href="" class="menu-list__link">Сотрудничество</a>
-                            <span class="menu-list__arrow">
-                                <img class="" src="icon/header/menulist_arrow.png" alt="">
-                            </span>
-
-                            <ul class="sublist ">
-                                <div class="arrow_back">
-                                    Назад
-                                </div>
-
-                                <li class="sublist__item">
-                                    <a href="">Сотрудничество 1</a>
-                                </li>
-                                <li class="sublist__item">
-                                    <a href="">Сотрудничество 2</a>
-                                </li>
-                                <li class="sublist__item">
-                                    <a href="">Сотрудничество 3</a>
-                                </li>
-                                <li class="sublist__item">
-                                    <a href="">Сотрудничество 4</a>
-                                </li>
-                                <li class="sublist__item">
-                                    <a href="">Сотрудничество 5</a>
-                                </li>
-                            </ul>
-
-
-                        </li>
-                        <li class="menu-list__item">
-
-                            <a href="" class="menu-list__link">Клиентам</a>
-
-                        </li>
-                        <li class="menu-list__item">
-                            <a href="" class="menu-list__link">О нас</a>
-                            <span class="menu-list__arrow">
-                                <img class="" src="icon/header/menulist_arrow.png" alt="">
-                            </span>
-
-                            <ul class="sublist ">
-                                <div class="arrow_back">
-                                    Назад
-                                </div>
-
-                                <li class="sublist__item">
-                                    <a href="">История создания</a>
-                                </li>
-                                <li class="sublist__item">
-                                    <a href="">История создания</a>
-                                </li>
-
-                            </ul>
-                        </li>
-                        <li class="menu-list__item">
-                            <a href="" class="menu-list__link">Блог</a>
-                        </li>
-                        <li class="menu-list__item">
-                            <a href="" class="menu-list__link">Контакты </a>
-                            <span class="menu-list__arrow">
-                                <img class="" src="icon/header/menulist_arrow.png" alt="">
-                            </span>
-
-                            <ul class="sublist ">
-                                <div class="arrow_back">
-                                    Назад
-                                </div>
-
-                                <li class="sublist__item">
-                                    <a href="">Контакты 1</a>
-                                </li>
-                                <li class="sublist__item">
-                                    <a href="">Контакты 2</a>
-                                </li>
-                                <li class="sublist__item">
-                                    <a href="">Контакты 3</a>
-                                </li>
-
-                            </ul>
-                        </li>
-
-                    </ul>
                     <div class="menu-contacts ">
                         <div class="menu-contacts__label">Новости в удобном формате:</div>
                         <div class="menu-contacts__social">
@@ -292,18 +128,7 @@
             </div>
 
         </div>
-        <form class="modal-window" id="modal-window" action="php/order_call.php" method="post">
-            <div class="modal-window__field">
-                <div class="modal-window__label">Имя</div>
-                <input type="text" class="modal-window__input" name="name">
-            </div>
-            <div class="modal-window__field">
-                <div class="modal-window__label">Номер телефона</div>
-                <input type="text" class="modal-window__input" name="number">
-            </div>
-            <button  type="submit"  class="modal-window__button" >Отправить</button>
-            <div class="message-alert" ></div>
-        </form>
+        <?php require 'blocks/modal-form.php'; ?>
     </div>
 
 

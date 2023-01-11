@@ -1,33 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db8fea44-6b12-4e64-8bf2-3f6f1ae7360d" name="Changes" comment="что-то сделал">
-      <change afterPath="$PROJECT_DIR$/www/php/order.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/php/order_product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="db8fea44-6b12-4e64-8bf2-3f6f1ae7360d" name="Changes" comment="order_call order_product">
+      <change afterPath="$PROJECT_DIR$/www/blocks/menu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/blocks/modal-form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/core/prolog.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/php/order_call.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/php/test.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/blocks/main-slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/blocks/main-slider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/blocks/offers.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/blocks/offers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/blocks/order.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/blocks/order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/blocks/popular.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/blocks/popular.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/php/order_call.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/php/order.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/php/order_product.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/php/order_product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/script/ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/script/ajax.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/script/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/script/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/script/offers.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/script/offers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/script/popular.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/script/popular.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/script/rating.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/script/rating.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/script/review.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/script/review.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/script/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/script/slider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/style/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/style/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/style/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/style/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/style/mainSlider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/mainSlider.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/style/modal-window.scss" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/modal-window.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/style/offers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/offers.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/style/order.scss" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/order.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/style/popular.scss" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/popular.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/style/review.scss" beforeDir="false" afterPath="$PROJECT_DIR$/www/style/review.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/templates/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/templates/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -143,7 +129,7 @@
       <workItem from="1673207645609" duration="9004000" />
       <workItem from="1673260235732" duration="24806000" />
       <workItem from="1673351997013" duration="19858000" />
-      <workItem from="1673429435129" duration="12340000" />
+      <workItem from="1673429435129" duration="33575000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1671730321888</created>
@@ -208,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673379264905</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="order_call order_product">
+      <created>1673441933060</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1673441933060</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +241,7 @@
     <MESSAGE value="review" />
     <MESSAGE value="modal-window" />
     <MESSAGE value="что-то сделал" />
-    <option name="LAST_COMMIT_MESSAGE" value="что-то сделал" />
+    <MESSAGE value="order_call order_product" />
+    <option name="LAST_COMMIT_MESSAGE" value="order_call order_product" />
   </component>
 </project>

@@ -476,12 +476,6 @@ ol {
   cursor: pointer;
   align-content: center;
   color: white;
-  font-size: 18px;
-}
-@media screen and (max-width: 1200px) {
-  .menu-list__item {
-    font-size: 15px;
-  }
 }
 @media screen and (min-width: 992px) {
   .menu-list__item {
@@ -491,8 +485,7 @@ ol {
 }
 @media screen and (max-width: 992px) {
   .menu-list__item {
-    font-size: 15px;
-    padding: 0 20px 0 20px;
+    padding: 0 20px 10px 20px;
   }
   .menu-list__item:last-child {
     margin-bottom: 20px;
@@ -522,6 +515,7 @@ ol {
 }
 @media screen and (max-width: 992px) {
   .menu-list__link {
+    font-size: 20px;
     line-height: 40px;
   }
 }
@@ -577,6 +571,8 @@ ol {
 }
 @media screen and (max-width: 992px) {
   .sublist__item {
+    padding-bottom: 15px;
+    font-size: 20px;
     line-height: 40px;
     color: white;
   }
