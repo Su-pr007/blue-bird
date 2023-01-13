@@ -5,7 +5,7 @@ require_once 'templates/header.php';
 
         <?php
 
-        require 'blocks/main-slider.php';
+        require 'blocks/main_slider.php';
         require 'blocks/popular.php';
         require 'blocks/offers.php';
         require 'blocks/order.php';

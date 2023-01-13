@@ -49,43 +49,9 @@
                     </div>
                 </div>
                 <div class="footer-main__column">
-                    <div class="footer-menu ">
 
-                        <ul class="footer-menu__list ">
-                            <li class="footer-menu__item">
-                                <a href="" class="footer-menu__link">Виды птиц</a>
+                    <?php require 'blocks/footer_menu.php'; ?>
 
-                            </li>
-                            <li class="footer-menu__item">
-                                <a href="" class="footer-menu__link">Популярное </a>
-
-                            </li>
-                            <li class="footer-menu__item">
-                                <a href="" class="footer-menu__link">Заказы </a>
-                            </li>
-                            <li class="footer-menu__item">
-                                <a href="" class="footer-menu__link">Сотрудничество</a>
-                            </li>
-                            <li class="footer-menu__item">
-                                <a href="" class="footer-menu__link">Клиентам</a>
-                            </li>
-                            <li class="footer-menu__item">
-                                <a href="" class="footer-menu__link">О нас</a>
-                            </li>
-                            <li class="footer-menu__item">
-                                <a href="" class="footer-menu__link">Блог</a>
-                            </li>
-                            <li class="footer-menu__item">
-                                <a href="" class="footer-menu__link">Контакты </a>
-
-                            </li>
-
-                        </ul>
-
-                        <div class="footer-additional">
-                            <a href="" class="footer-additional__link"></a>
-                        </div>
-                    </div>
                 </div>
                 <div class="footer-main__column">
                     <div class="footer-services">

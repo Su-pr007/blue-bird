@@ -1,5 +1,6 @@
 <?php
 $con = new PDO('mysql:dbname=blue_bird;host=mysql', 'root', 'root');
+
 const arr_menu = [
     [
         'name' => 'Главная',
@@ -114,3 +115,37 @@ const arr_menu = [
         ],
     ],
 ];
+
+const arr_mainSlider = [
+    [
+        'url'=>'/icon/main_slider/slide1.jpg',
+        'label'=>'Голубь',
+        'text'=>'Adipisci animi consequatur dolorem facere fugit idillo incidunt iure tempore veniam',
+        'color'=>'',
+    ],
+    [
+        'url'=>'icon/main_slider/slide2.jpg',
+        'label'=>'Бабочка',
+        'text'=>'Addipisci animi consequatur dolorem facere fugit idillo incidunt iure tempore veniam',
+        'color'=>'white',
+    ],
+    [
+        'url'=>'icon/main_slider/slide3.jpg',
+        'label'=>'Феникс',
+        'text'=>'Adipisci animi consequatur dolorem facere fugit idillo incidunt iure tempore veniam',
+        'color'=>'',
+    ],
+    [
+        'url'=>'icon/main_slider/slide4.jpg',
+        'label'=>'Воробей',
+        'text'=>'Adipisci animi consequatur dolorem facere fugit idillo incidunt iure tempore veniam',
+        'color'=>'',
+    ],
+    [
+        'url'=>'icon/main_slider/slide5.jpg',
+        'label'=>'Цветок',
+        'text'=>'Adipisci animi consequatur dolorem facere fugit idillo incidunt iure tempore veniam',
+        'color'=>'white',
+    ],
+];
+

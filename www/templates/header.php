@@ -64,11 +64,9 @@ global $con;
                             <img src="icon/header/uk.png" alt="" class="country__icon">
                         </div>
                     </div>
-                    <button class="icon-menu ">
+                    <div class="icon-menu">
                         <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
+                    </div>
                 </div>
                 <div class="header-search">
                     <input class="header-search__input" type="text" placeholder="А вот тут поиск!">
@@ -128,7 +126,7 @@ global $con;
             </div>
 
         </div>
-        <?php require 'blocks/modal-form.php'; ?>
+        <?php require 'blocks/modal_form.php'; ?>
     </div>
 
 

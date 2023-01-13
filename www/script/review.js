@@ -25,7 +25,7 @@ new Swiper('.review-slider', {
 
 
 $('.review-slider__text').each(function () {
-    if ($(this).height() > 105) {
+    if ($(this).height() > 167) {
         $(this).addClass('review-slider__text_short')
         $(this).after('<button class="review-slider__button-all">Показать полностью</button>')
     }

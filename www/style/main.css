@@ -524,11 +524,13 @@ ol {
 }
 @media screen and (max-width: 992px) {
   .menu-list__arrow {
+    padding: 0 10px;
     cursor: pointer;
     display: inline-block;
-    width: 60px;
+    position: relative;
+    top: -2px;
     line-height: 40px;
-    top: 0;
+    width: 60px;
   }
 }
 
@@ -651,37 +653,36 @@ ol {
 
 .icon-menu {
   display: none;
-  z-index: 3;
-  position: relative;
-  width: 25px;
-  height: 20px;
+  width: 30px;
 }
-
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .icon-menu {
     display: block;
   }
 }
-.icon-menu span, .icon-menu:before, .icon-menu:after {
-  position: absolute;
-  left: 0;
-  height: 20%;
-  width: 100%;
-  background-color: #1151d1;
-  cursor: pointer;
+.icon-menu_active span {
+  transform: scale(0);
 }
-.icon-menu:before, .icon-menu:after {
-  content: "";
+.icon-menu_active:before {
+  transform: translateY(12px) rotate(135deg);
 }
-.icon-menu:before {
-  top: 0;
+.icon-menu_active:after {
+  transform: translateY(-12px) rotate(-135deg);
 }
-.icon-menu:after {
-  bottom: 0;
-}
+
 .icon-menu span {
-  top: 50%;
-  transform: translate(0, -50%);
+  margin: 5px 0;
+}
+
+.icon-menu:before,
+.icon-menu:after,
+.icon-menu span {
+  background: #1151d1;
+  content: "";
+  display: block;
+  height: 5px;
+  border-radius: 3px;
+  transition: 0.5s;
 }
 
 .arrow_back {
@@ -1111,11 +1112,11 @@ ol {
   min-height: 450px;
   border: 1px solid darkslateblue;
   border-radius: 10px;
-  padding: 35px 0 10px 35px;
+  padding: 35px 35px 10px 35px;
 }
 @media screen and (max-width: 1200px) {
   .review-slider__slide {
-    padding: 25px 0 25px 25px;
+    padding: 25px 25px 25px 25px;
   }
 }
 @media screen and (max-width: 768px) {

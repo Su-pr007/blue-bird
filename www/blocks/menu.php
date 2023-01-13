@@ -1,7 +1,7 @@
 <?php
 require $_SERVER['DOCUMENT_ROOT'] . '/core/prolog.php';
 global $con;
-$menu = $con->query('SELECT * FROM `menu_list`');
+
 
 ?>
 <ul class="menu-list menu-list_header">
