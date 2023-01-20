@@ -18,7 +18,9 @@
     }
 }
 
-
+.popular-main{
+    position: relative;
+}
 .popular-slider {
     position: relative;
 
@@ -127,11 +129,11 @@
 
     &__button-prev {
         left: -20px;
+        top: 50%;
         border-radius: 50%;
         background-color: #F2F1F1;
         height: 50px;
         width: 50px;
-
         @include media.breakpoint(md) {
             display: none;
         }
@@ -149,6 +151,7 @@
 
     &__button-next {
         right: -20px;
+        top: 50%;
         height: 50px;
         width: 50px;
         border-radius: 50%;

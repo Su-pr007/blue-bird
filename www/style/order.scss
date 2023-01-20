@@ -10,7 +10,7 @@
         background-image: url("../icon/order/background.png");
         backdrop-filter: grayscale(30%);
         background-size: 300px;
-        animation: order 150s linear infinite;
+        animation: order 15s linear infinite;
     }
 
     &__container {
@@ -140,11 +140,8 @@
     0% {
         background-position: 0 0;
     }
-    50% {
-        background-position: 100% 0;
-    }
     100% {
-        background-position: 0 0;
+        background-position: 100% 0;
     }
 }
 

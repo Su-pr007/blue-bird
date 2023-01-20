@@ -31,9 +31,7 @@ $('.review-slider__text').each(function () {
     }
 })
 
-$('.review-slider__button-all').click(
-    function () {
+$('.review-slider__button-all').click(function () {
         $(this).parent().find('.review-slider__text').toggleClass('review-slider__text_active')
-        console.log($(this).parent().find('.review-slider__text').height())
     }
 );
