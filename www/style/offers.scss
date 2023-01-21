@@ -56,12 +56,14 @@
         position: relative;
         transition: all 0.3s ease;
 
-        &:hover {
-
-            width: 150%;
-            height: 150%;
-            z-index: 5;
+        @media (any-hover: hover) {
+             &:hover {
+                 z-index: 5;
+                 transform-origin: 0 0;
+                 transform: scale(1.5);
         }
+        }
+
     }
 
     &__image {

@@ -6,18 +6,19 @@ $('body').on('click', '.icon-menu', function () {
     $('.header-search').removeClass('header-search_active');
 });
 
-$('body').on('click', '.menu-list__arrow', function (e) {
+$('body').on('click', '.menu-list__arrow', function () {
+    $('.menu-list__item').addClass('menu-list__item_hidden')
+    $(this).parent().removeClass('menu-list__item_hidden')
+    $(this).next().addClass('sublist__item_active');
 
-    $(this).next().addClass('_active');
-
-
-});
-$('body').on('click', '.arrow_back', function (e) {
-
-    $(this).parent().removeClass('_active');
 
 });
-$('body').on('click', '.search-icon', function (e) {
+$('body').on('click', '.arrow_back', function () {
+    $('.menu-list__item').removeClass('menu-list__item_hidden')
+    $(this).parent().removeClass('sublist__item_active');
+
+});
+$('body').on('click', '.search-icon', function () {
     $('.header-search').toggleClass('header-search_active');
     $('.header-menu__wrapper').removeClass('header-menu__wrapper_active').removeClass('header-menu__wrapper_transform');
     $('.mobile-top').removeClass('mobile-top_active');

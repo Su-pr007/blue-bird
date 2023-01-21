@@ -10,6 +10,7 @@ $arr_review = $review->fetchAll();
         <div class="review__wrapper">
             <div class="review__container container1">
                 <div class="review__label">Отзовы довольных клиентов</div>
+                <div class="review-main">
                 <div class="review-slider swiper">
                     <div class="review-slider__wrapper swiper-wrapper">
 
@@ -23,11 +24,11 @@ $arr_review = $review->fetchAll();
                                             <div class="rating__body">
                                                 <div class="rating__value" data-value="<?= $item['stars'] ?>"></div>
                                                 <div class="rating__items">
-                                                    <input type="radio" class="rating__item" value="" name="rating">
-                                                    <input type="radio" class="rating__item" value="" name="rating">
-                                                    <input type="radio" class="rating__item" value="" name="rating">
-                                                    <input type="radio" class="rating__item" value="" name="rating">
-                                                    <input type="radio" class="rating__item" value="" name="rating">
+                                                    <div type="radio" class="rating__item" value="" name="rating"></div>
+                                                    <div type="radio" class="rating__item" value="" name="rating"></div>
+                                                    <div type="radio" class="rating__item" value="" name="rating"></div>
+                                                    <div type="radio" class="rating__item" value="" name="rating"></div>
+                                                    <div type="radio" class="rating__item" value="" name="rating"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -46,9 +47,12 @@ $arr_review = $review->fetchAll();
 
 
                     </div>
+
+                    </div>
+                     <div class="review-slider__button-prev swiper-button-prev"></div>
+                    <div class="review-slider__button-next swiper-button-next"></div>
                 </div>
-                <div class="review-slider__button-prev swiper-button-prev"></div>
-                <div class="review-slider__button-next swiper-button-next"></div>
+
 
             </div>
         </div>

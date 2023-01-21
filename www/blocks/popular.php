@@ -11,28 +11,30 @@ $arr_popular = $popular->fetchAll();
             <div class="popular__label">
                 Популярное
             </div>
+            <div class="popular-main">
+                <div class="popular-slider swiper">
+                    <div class="popular-slider__wrapper swiper-wrapper">
 
-            <div class="popular-slider swiper">
-                <div class="popular-slider__wrapper swiper-wrapper">
-
-                    <?php foreach ($arr_popular as $item) { ?>
-                        <div class="popular-slider__slide swiper-slide">
-                            <div class="popular-slider__main">
-                                <img src="<?= $item['url'] ?>" alt="" class="popular-slider__image">
-                                <div class="popular-slider__text"><?= $item['label'] ?></div>
+                        <?php foreach ($arr_popular as $item) { ?>
+                            <div class="popular-slider__slide swiper-slide">
+                                <div class="popular-slider__main">
+                                    <img src="<?= $item['url'] ?>" alt="" class="popular-slider__image">
+                                    <div class="popular-slider__text"><?= $item['label'] ?></div>
+                                </div>
+                                <div class="popular-slider__status"></div>
+                                <div class="popular-slider__prise">
+                                    <div class="popular-slider__quantity"><?= $item['quantity'] ?></div>
+                                    <button class="popular-slider__button"><?= $item['prise'] ?>$</button>
+                                </div>
                             </div>
-                            <div class="popular-slider__status"></div>
-                            <div class="popular-slider__prise">
-                                <div class="popular-slider__quantity"><?= $item['quantity'] ?></div>
-                                <button class="popular-slider__button"><?= $item['prise'] ?>$</button>
-                            </div>
-                        </div>
-                    <?php } ?>
+                        <?php } ?>
 
+                    </div>
                 </div>
+                <div class="popular-slider__button-prev swiper-button-prev"></div>
+                <div class="popular-slider__button-next swiper-button-next"></div>
             </div>
-            <div class="popular-slider__button-prev swiper-button-prev"></div>
-            <div class="popular-slider__button-next swiper-button-next"></div>
+
         </div>
     </div>
 <?php } ?>

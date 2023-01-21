@@ -3,7 +3,6 @@
 function convert($str)
 {
     $string = strtolower(trim($str));
-    $new_array = [];
     $number = 0;
     $reg = '/^M{0,3}(?:C[MD]|D?C{0,3})(?:X[CL]|L?X{0,3})(?:I[XV]|V?I{0,3})$/i';
     $result = preg_match($reg, $string);
@@ -14,34 +13,32 @@ function convert($str)
         return false;
     }
 
+    foreach ($array as &$item) {
+        if ($item == 'm') {
+            $item = 1000;
+        } elseif ($item == 'd') {
+            $item = 500;
+        } elseif ($item == 'c') {
+            $item = 100;
+        } elseif ($item == 'l') {
+            $item = 50;
+        } elseif ($item == 'x') {
+            $item = 10;
+        } elseif ($item == 'v') {
+            $item = 5;
+        } elseif ($item == 'i') {
+            $item = 1;
+        }
+//        array_push($new_array, $int);
+    }
+    var_dump($array);
+
+    unset($item);
+
 
     foreach ($array as $item){
-
-    }
-
-    foreach ($array as $item) {
-        if ($item == 'm') {
-            $int = 1000;
-        } elseif ($item == 'd') {
-            $int = 500;
-        } elseif ($item == 'c') {
-            $int = 100;
-        } elseif ($item == 'l') {
-            $int = 50;
-        } elseif ($item == 'x') {
-            $int = 10;
-        } elseif ($item == 'v') {
-            $int = 5;
-        } elseif ($item == 'i') {
-            $int = 1;
-        }
-        array_push($new_array, $int);
-    }
-
-
-
-    foreach ($new_array as $item){
-        if (current($new_array) < next($new_array) ){
+        var_dump($array);
+        if (current($array) < next($array) ){
              $number -= $item;
         }else{
             $number += $item;
@@ -51,7 +48,7 @@ function convert($str)
     return $number;
 }
 
-print_r(convert('MCMXCIV'));
+print_r(convert('iv'));
 ?>
 
 
