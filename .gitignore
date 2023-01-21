@@ -1,3 +1,5 @@
-www/node_modules/
-docker/mysql
+/www/node_modules/
+/www/package-lock.json
+/docker/mysql/data
+/.env
 .idea

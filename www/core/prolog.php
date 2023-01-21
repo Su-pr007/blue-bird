@@ -1,5 +1,5 @@
 <?php
-$con = new PDO('mysql:dbname=blue_bird;host=mysql', 'root', 'root');
+$con = new PDO('mysql:dbname=blue_bird;host=mysql', 'user', 'password');
 
 const arr_menu = [
     [
